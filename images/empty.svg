@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="104px" height="104px" viewBox="0 0 104 104" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>empty</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-3.5%" y="-2.5%" width="107.0%" height="107.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <circle id="path-2" cx="50" cy="50" r="50"></circle>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="avatar-copy-2" transform="translate(2.000000, 1.000000)">
+            <g id="empty" filter="url(#filter-1)">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <use id="Oval" fill="#F0F0F0" xlink:href="#path-2"></use>
+                <path d="M45.598,43.252 L42.826,43.252 L42.826,52.648 C42.826,53.62 42.304,54.106 41.35,54.106 C40.828,54.106 40.288,53.944 40,53.782 L40,56.122 C40.324,56.284 40.99,56.464 41.8,56.464 C44.248,56.464 45.598,55.294 45.598,52.522 L45.598,43.252 Z M60.252,43.9 C59.586,43.54 58.29,43 56.472,43 C52.476,43 49.614,45.952 49.614,49.732 C49.614,53.53 52.476,56.464 56.382,56.464 C58.2,56.464 59.676,55.96 60.342,55.6 L60.342,53.026 C59.532,53.44 58.254,53.926 56.58,53.926 C54.024,53.926 52.386,52.054 52.386,49.732 C52.386,47.428 54.042,45.538 56.67,45.538 C58.254,45.538 59.478,46.042 60.252,46.438 L60.252,43.9 Z" id="JC-Copy" fill-opacity="0.4" fill="#2D2926" mask="url(#mask-3)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

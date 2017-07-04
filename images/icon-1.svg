@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="52px" height="52px" viewBox="0 0 52 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="freelamncer-profile-cont." stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Job---1" transform="translate(-29.000000, -14.000000)">
+            <g id="empty-jon" transform="translate(30.000000, 15.000000)">
+                <g id="Group">
+                    <circle id="Oval-2" stroke="#FFFFFF" stroke-width="2" fill="#F2F2F2" cx="25" cy="25" r="25"></circle>
+                    <path d="M24.293,21.424 C23.775,21.144 22.767,20.724 21.353,20.724 C18.245,20.724 16.019,23.02 16.019,25.96 C16.019,28.914 18.245,31.196 21.283,31.196 C22.697,31.196 23.845,30.804 24.363,30.524 L24.363,28.522 C23.733,28.844 22.739,29.222 21.437,29.222 C19.449,29.222 18.175,27.766 18.175,25.96 C18.175,24.168 19.463,22.698 21.507,22.698 C22.739,22.698 23.691,23.09 24.293,23.398 L24.293,21.424 Z M34.611,20.92 L32.273,20.92 L30.957,23.832 C30.509,24.826 29.893,26.254 29.599,26.968 C29.249,25.988 28.787,24.994 28.269,23.832 L26.953,20.92 L24.601,20.92 L29.571,31.154 L29.655,31.154 L34.611,20.92 Z" id="CV" fill-opacity="0.38" fill="#000000"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

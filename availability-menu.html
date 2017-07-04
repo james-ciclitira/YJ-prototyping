@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Availability</title>
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+.open-button button {}
+</style>
+
+<body>
+  <div style='background-color: #F0F0F0; height: 2000px'>
+    <header class="w-100 bg-white pv2 ph3 db relative" style="height: 56px">
+<a href="index.html"><img  class="pl3 pointer" src="images/logo.svg"></a>
+      <div class="v-top mt2 pl3-ns pl0 dn">
+        <a class="no-underline v-mid pl3 mt2 black-50" href="availability.html">Expanding</a>
+        <a class="no-underline v-mid pl3 mt2 black-50" href="available-modal.html">Modal</a>
+        <a class="no-underline v-mid pl3 mt2 black-50" href="available-dropdowns.html">Dropdown</a>
+        <a class="no-underline v-mid pl3-ns pl1 mt2 black-70 b" href="availability-menu.html">Menu</a>
+      </div>
+      <div class="dib fr pointer">
+        <img id="icon" class="drop-click fr" onclick="myFunction()" src="images/icon.png">
+        <div class="dib fr pr3 tr pt1">
+          <p class="ma0">Hola,<span class="pl2">Anastasia</span></p>
+          <p id="text" onclick="myFunction()" class="ma0 pt1 mb2 drop-click" style="font-size: 13px; color: rgba(0,0,0, 0.50); letter-spacing:0.5px">Available</p>
+          <div onclick="myFunction()" class="indicator bg-white tl absolute z-2 mt2 dn shadow-1" style="min-width: 160px; right: 5px" id="menu">
+            <a onclick="changes()" class="f14 p3 db bt b--black-05 drop-click2 no-underline">Change availability</a>
+            <a class="f14 p3 db bt b--black-05">Profile</a>
+            <a class="f14 p3 db bt b--black-05">Settings</a>
+            <a class="f14 p3 db bt b--black-05">Refer a friend</a>
+            <a class="f14 p3 db bt b--black-05">Benefits</a>
+            <a class="f14 p3 db bt b--black-05">Timeline</a>
+            <a class="f14 p3 db bt b--black-05">FAQ</a>
+            <a class="f14 p3 db bt b--black-05">Sign out</a>
+          </div>
+
+
+          <div>
+            <div onclick="changes()" id="menu2" class="indicator bg-white tl absolute z-2 mt2 dn shadow-1" style="min-width: 160px; right: 5px" id="menu">
+              <a onclick="Available()" class="f14 p3 db b">
+                <div class="dib br-100 mr3" style="height: 8px; width:8px; background-color: #47D7AC"></div>Available</a>
+              <a onclick="date()" class="f14 p3 db bt b--black-05 drop-click">
+                <div class="dib br-100 bg-red mr3" style="height: 8px; width:8px;"></div>Busy until</a>
+              <a onclick="Unavailable()" class="f14 p3 db bt b--black-05">
+                <div class="dib br-100 mr3" style="height: 8px; width:8px; background-color: #607D8B"></div>Unavailable</a>
+            </div>
+          </div>
+          <div>
+            <div id="availability" class="bg-white tl absolute z-1 shadow-1 mt2 dn" style="min-width: 160px; right: 5px">
+              <a class="f7 pv2 ph3 mt2 db">When are you available?</a>
+              <div class="ph3 pv2">
+                <div class="relative mb3">
+                  <input class='black-50' style="height: 32px; font-size: 14px; padding-left: 8px" type="date">
+                  <span style="position: absolute; top: 5px; right: 3px; width: 32px; pointer-events: none;"><button style="border: none; background: white" type="button"><img src="images/ic_calendar.svg"></button></span>
+                </div>
+                <div>
+                <a onclick="UnavailableTill();" class="f6 db grow no-underline br-pill tc ph3 pv2 mb2  b bg-accent black-90" href="#0">Update status</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </header>
+  </div>
+  <script>
+  function Unavailable() {
+    document.getElementById("text").innerHTML = 'Unavailable';
+    document.getElementById('icon').src = 'images/icon-3.png';
+    document.getElementById('permanently-tab').classList.add('b')
+    document.getElementById('unavailable-tab').classList.remove('b')
+    document.getElementById('available-tab').classList.remove('b')
+  }
+
+  function UnavailableTill() {
+    document.getElementById("text").innerHTML = 'Busy until 22/20/2017';
+    document.getElementById('icon').src = 'images/icon-2.png';
+    document.getElementById('unavailable-tab').classList.add('b')
+    document.getElementById('permanently-tab').classList.remove('b')
+    document.getElementById('available-tab').classList.remove('b')
+  }
+
+  function Available() {
+    document.getElementById("text").innerHTML = 'Available';
+    document.getElementById('icon').src = 'images/icon.png'
+    document.getElementById('available-tab').classList.add('b')
+    document.getElementById('permanently-tab').classList.remove('b')
+    document.getElementById('unavailable-tab').classList.remove('b')
+  }
+
+  function myFunction() {
+    document.getElementById("menu").classList.toggle("db");
+  }
+
+  window.onclick = function(e) {
+    if (!e.target.matches('.drop-click')) {
+      var menu = document.getElementById("menu");
+      if (menu.classList.contains('db')) {
+        menu.classList.remove('db');
+      }
+    }
+  }
+
+  function changes() {
+    document.getElementById("menu2").classList.toggle("db");
+  }
+
+  window.onclick = function(e) {
+    if (!e.target.matches('.drop-click2')) {
+      var menu = document.getElementById("menu2");
+      if (menu.classList.contains('db')) {
+        menu.classList.remove('db');
+      }
+    }
+  }
+
+
+
+  function date() {
+    document.getElementById("availability").classList.toggle("db");
+  }
+
+  window.onclick = function(e) {
+    if (!e.target.matches('.drop-click')) {
+      var menu = document.getElementById("availability");
+      if (menu.classList.contains('db')) {
+        menu.classList.remove('db');
+      }
+    }
+  }
+  </script>
+</body>
+
+</html>

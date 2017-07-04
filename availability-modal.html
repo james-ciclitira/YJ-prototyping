@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Availability - Modal</title>
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+.show {
+  display: block;
+}
+</style>
+
+<body>
+  <div style='background-color: #F0F0F0; height: 2000px'>
+    <header class="w-100 bg-white pv2 ph3 db relative" style="height: 56px">
+<a href="index.html"><img  class="pl3 pointer" src="images/logo.svg"></a>
+      <div class="dib v-top mt2 pl3-ns pl0">
+        <a class="no-underline v-mid pl3 mt2 black-50" href="availability.html">Expanding</a>
+        <a class="no-underline v-mid pl3 mt2 black-70 b" href="available-modal.html">Modal</a>
+        <a class="no-underline v-mid pl3 mt2 black-50" href="available-dropdowns.html">Dropdown</a>
+        <a class="no-underline v-mid pl3-ns pl1 mt2 black-50" href="availability-menu.html">Menu</a>
+
+      </div>
+      <div class="dib fr pointer ">
+        <img id="icon" class="drop-click fr" onclick="myFunction()" src="images/icon.png">
+        <div class="dib fr pr3 tr pt1">
+          <p class="ma0">Hola,<span class="pl2">Anastasia</span></p>
+          <p id="text" onclick="myFunction()" class="ma0 f7 black-50 pt1 mb2 drop-click">Available</p>
+          <div class="bg-white tl absolute z-1 shadow-1 dn" style="min-width: 160px; right: 24px" id="menu3">
+            <a class="f14 pv2 ph3 mt3 db">I'm busy untill</a>
+            <div class="ph3 pv2">
+              <input class="db mb3" type="date" name="">
+              <a class="f6 grow no-underline br-pill tc ph3 pv2 mb2 dib b bg-accent black-90" href="#0">Update your status</a>
+            </div>
+          </div>
+          <div onclick="myFunction()" class="indicator bg-white tl absolute z-2 mt2 dn shadow-1" style="min-width: 160px; right: 5px" id="menu">
+            <a href="#jsModal" id="popup" class="f14 p3 db bt b--black-05 jsModalTrigger no-underline black-70">Edit availability</a>
+            <a class="f14 p3 db bt b--black-05">Profile</a>
+            <a class="f14 p3 db bt b--black-05">Settings</a>
+            <a class="f14 p3 db bt b--black-05">Refer a friend</a>
+            <a class="f14 p3 db bt b--black-05">Benefits</a>
+            <a class="f14 p3 db bt b--black-05">Timeline</a>
+            <a class="f14 p3 db bt b--black-05">FAQ</a>
+            <a class="f14 p3 db bt b--black-05">Sign out</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="jsModal" class="modal fixed top-0 right-0 bottom-0 left-0 w-100 h-100 o-0" style="padding: 20px;">
+      <div class="modal__overlay jsOverlay fixed top-0 right-0 bottom-0 left-0"></div>
+      <div class="modal__container relative overflow-auto">
+        <div class="pt pl pr">
+          <h2 class="ma0 pa0">Show me as</h2>
+          <form style="margin-top: 30px">
+            <div onclick='Available()' id="hide" class="ig-control">
+              <input name="group" type="radio" id="checked" class="ig-control__radio" checked />
+              <label for="checked">Available to work</label>
+            </div>
+            <div onclick='unavailable()' id="hide2" class="ig-control">
+              <input name="group" type="radio" id="unchecked" class="ig-control__radio" />
+              <label for="unchecked">Permanently unavailable</label>
+            </div>
+            <a id="show" class="ig-control">
+              <input onclick='UnavailableTill()' name="group" type="radio" id="unchecked-2" class="ig-control__radio" />
+              <label for="unchecked-2">Unavailable untill</label>
+            </a>
+            <div id="input" class=" dn">
+              <input class="0-80 mt3" style="height: 36px; padding-left: 12px; margin-left: 30px; color: rgb(136, 136, 136)" type="date">
+            </div>
+          </form>
+        </div>
+        <button class="modal__close jsModalClose absolute pointer grow" style="top: 20px; right: 20px">&#10005;</button>
+        <hr class="w-100 absolute" style="margin-top: 40px; bottom: 72px">
+        <div style="width: 100%; height:110px"></div>
+        <button class="modal__close jsModalClose v-btm fr absolute bottom-0 right-0" style='margin-right: 10px; margin-bottom: 15px'><a onclick="closeModal()" class="f6 grow no-underline br-pill tc ph3 pv2 dib b bg-accent fr black-90" style="padding-top: 14px; padding-bottom: 14px" href="#0">Update status</a></button>
+      </div>
+    </div>
+    <script>
+    function unavailable() {
+      document.getElementById("text").innerHTML = 'Permanently unavailable';
+      document.getElementById('icon').src = 'images/icon-2.png'
+    }
+
+    function UnavailableTill() {
+      document.getElementById("text").innerHTML = 'Unavailable untill 22/20/2017';
+      document.getElementById('icon').src = 'images/icon-3.png'
+    }
+
+    function Available() {
+      document.getElementById("text").innerHTML = 'Available';
+      document.getElementById('icon').src = 'images/icon.png'
+    }
+
+
+    $("#show").click(function() {
+      document.getElementById('input').classList.add("db");
+    });
+
+    $("#hide").click(function() {
+      document.getElementById('input').classList.remove("db");
+    });
+    $("#hide2").click(function() {
+      document.getElementById('input').classList.remove("db");
+    });
+
+    function myFunction() {
+      document.getElementById("menu").classList.toggle("db");
+    }
+
+    window.onclick = function(e) {
+      if (!e.target.matches('.drop-click')) {
+        var menu = document.getElementById("menu");
+        if (menu.classList.contains('db')) {
+          menu.classList.remove('db');
+        }
+      }
+    }
+
+
+    (function() {
+      function openModal() {
+        var modalTrigger = document.getElementsByClassName('jsModalTrigger');
+
+        for (var i = 0; i < modalTrigger.length; i++) {
+          modalTrigger[i].onclick = function() {
+            var target = this.getAttribute('href').substr(1);
+            var modalWindow = document.getElementById(target);
+
+            modalWindow.classList ? modalWindow.classList.add('open') : modalWindow.className += ' ' + 'open';
+          }
+        }
+      }
+
+      function closeModal() {
+        var closeButton = document.getElementsByClassName('jsModalClose');
+        var closeOverlay = document.getElementsByClassName('jsOverlay');
+
+        for (var i = 0; i < closeButton.length; i++) {
+          closeButton[i].onclick = function() {
+            var modalWindow = this.parentNode.parentNode;
+
+            modalWindow.classList ? modalWindow.classList.remove('open') : modalWindow.className = modalWindow.className.replace(new RegExp('(^|\\b)' + 'open'.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
+          }
+        }
+
+        for (var i = 0; i < closeOverlay.length; i++) {
+          closeOverlay[i].onclick = function() {
+            var modalWindow = this.parentNode;
+
+            modalWindow.classList ? modalWindow.classList.remove('open') : modalWindow.className = modalWindow.className.replace(new RegExp('(^|\\b)' + 'open'.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
+          }
+        }
+
+      }
+
+      function ready(fn) {
+        if (document.readyState != 'loading') {
+          fn();
+        } else {
+          document.addEventListener('DOMContentLoaded', fn);
+        }
+      }
+
+      ready(openModal);
+      ready(closeModal);
+    }());
+    </script>
+</body>
+
+</html>

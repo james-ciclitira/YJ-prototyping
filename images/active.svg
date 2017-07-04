@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>active</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="10" cy="10" r="9"></circle>
+    </defs>
+    <g id="Availability-feature" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="availbiltiy-modal" transform="translate(-21.000000, -81.000000)">
+            <g id="Group-14" transform="translate(20.000000, 80.000000)">
+                <g id="Group-11">
+                    <g id="selectors/radio-active">
+                        <rect id="bounds" x="0" y="0" width="20" height="20"></rect>
+                        <g id="Oval">
+                            <use fill="#47D7AC" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            <circle stroke="#FFFFFF" stroke-width="4" cx="10" cy="10" r="7"></circle>
+                            <circle stroke="#DEDEDE" stroke-width="2" cx="10" cy="10" r="8"></circle>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
