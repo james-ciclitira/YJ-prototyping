@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="109px" height="117px" viewBox="0 0 109 117" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>ic/invoice</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M70.3660714,121.732143 C70.3660714,121.144531 69.9090402,120.6875 69.3214286,120.6875 C64.1635045,120.6875 59.9196429,116.443638 59.9196429,111.285714 C59.9196429,110.698103 59.4626116,110.241071 58.875,110.241071 C58.2873884,110.241071 57.8303571,110.698103 57.8303571,111.285714 C57.8303571,117.618862 62.9882813,122.776786 69.3214286,122.776786 C69.9090402,122.776786 70.3660714,122.319754 70.3660714,121.732143 Z M26.8828125,102.928571 C38.5697545,89.7399554 44.25,71.8504464 44.25,48.6071429 C44.25,40.1847098 52.2154018,27.7142857 69.3214286,27.7142857 C86.4274554,27.7142857 94.3928571,40.1847098 94.3928571,48.6071429 C94.3928571,71.8504464 100.073103,89.7399554 111.760045,102.928571 L26.8828125,102.928571 Z M123.642857,102.928571 C123.642857,107.498884 119.856027,111.285714 115.285714,111.285714 L86.0357143,111.285714 C86.0357143,120.491629 78.5273437,128 69.3214286,128 C60.1155134,128 52.6071429,120.491629 52.6071429,111.285714 L23.3571429,111.285714 C18.7868304,111.285714 15,107.498884 15,102.928571 C24.6629464,94.7672991 35.8928571,80.1422991 35.8928571,48.6071429 C35.8928571,36.0714286 46.2739955,22.3604911 63.5758929,19.8141741 C63.249442,19.030692 63.0535714,18.1819196 63.0535714,17.2678571 C63.0535714,13.8074777 65.8610491,11 69.3214286,11 C72.781808,11 75.5892857,13.8074777 75.5892857,17.2678571 C75.5892857,18.1819196 75.3934152,19.030692 75.0669643,19.8141741 C92.3688616,22.3604911 102.75,36.0714286 102.75,48.6071429 C102.75,80.1422991 113.979911,94.7672991 123.642857,102.928571 Z" id="path-1"></path>
+        <filter x="-1.8%" y="-1.7%" width="103.7%" height="103.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.12 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Dashboard:-Engage-Employers" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="tasks----empty" transform="translate(-550.000000, -158.000000)">
+            <g id="ic/invoice" transform="translate(535.000000, 147.000000)">
+                <rect id="bounds" x="0" y="0" width="138" height="138"></rect>
+                <g id="">
+                    <use fill-opacity="0.08" fill="#2D2926" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="116px" height="116px" viewBox="0 0 116 116" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>ic/chat</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M14.375,126.5 C12.7871813,126.5 11.5,125.212819 11.5,123.625 L11.5,30.475 C11.5,23.575 14.95,11.5 36.225,11.5 L106.95,11.5 C120.75,11.5 126.5,17.25 126.5,30.475 L126.5,71.875 C126.5,87.975 119.025,97.75 106.95,97.75 L59.225,97.75 C21.85,97.75 17.25,111.55 17.25,123.625 C17.25,125.212819 15.9628187,126.5 14.375,126.5 Z M36.225,17.25 C17.25,17.25 17.25,27.6 17.25,30.475 L17.25,105.225 C24.15,96.025 37.95,92 59.225,92 L106.95,92 C119.025,92 120.75,79.35 120.75,71.875 L120.75,30.475 C120.75,20.125 117.875,17.25 106.95,17.25 L36.225,17.25 Z M100.625,46 L37.375,46 C35.7871813,46 34.5,44.7128187 34.5,43.125 C34.5,41.5371813 35.7871813,40.25 37.375,40.25 L100.625,40.25 C102.212819,40.25 103.5,41.5371813 103.5,43.125 C103.5,44.7128187 102.212819,46 100.625,46 Z M69,63.25 L37.375,63.25 C35.7871813,63.25 34.5,61.9628187 34.5,60.375 C34.5,58.7871813 35.7871813,57.5 37.375,57.5 L69,57.5 C70.5878187,57.5 71.875,58.7871813 71.875,60.375 C71.875,61.9628187 70.5878187,63.25 69,63.25 Z" id="path-1"></path>
+        <filter x="-1.7%" y="-1.7%" width="103.5%" height="103.5%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.12 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Dashboard:-Engage-Employers" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="conversations---empty-" transform="translate(-543.000000, -161.000000)">
+            <g id="ic/chat" transform="translate(532.000000, 150.000000)">
+                <rect id="bounds" x="0" y="0" width="138" height="138"></rect>
+                <g id="Combined-Shape" fill-rule="nonzero">
+                    <use fill-opacity="0.08" fill="#2D2926" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

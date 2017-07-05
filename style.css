@@ -10,8 +10,34 @@ h4 {
   font-family: 'Brother-1816-Regular', sans-serif;
 }
 
-p {
+h1 {
+  font-size: 32px
+}
+
+h2 {
+  font-size: 24px
+}
+
+h3 {
+  font-size: 18px
+}
+
+h4 {
   font-size: 15px
+}
+
+p,
+span,
+a,
+button {
+  font-size: 15px;
+  color: #2D2926;
+  text-decoration: none
+}
+
+button {
+  outline: none;
+  border: 0px;
 }
 
 .bold {
@@ -22,12 +48,23 @@ p {
   background-color: #47d7ac;
 }
 
+.br-accent {
+  border-color: #47d7ac;
+}
+
 .bg-busy {
   background-color: #607D8B;
 }
 
 .accent {
   color: rgb(86, 212, 143);
+}
+
+.pa-button {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 13px;
+  padding-bottom: 13px
 }
 
 .br4 {
@@ -43,7 +80,7 @@ p {
 }
 
 .link {
-  color: #1ca683
+  color: #1ca683;
 }
 
 .pl25 {
@@ -124,10 +161,6 @@ p {
 }
 
 .indicator a:hover {
-  background-color: #eee;
-}
-
-.indicator li:hover {
   background-color: #eee;
 }
 
@@ -321,12 +354,12 @@ hr {
 
 .nav {
   padding-left: 16px;
-  background-color: white;
   padding-top: 16px;
   padding-bottom: 16px;
   width: 186px;
   height: 50px;
-  margin-bottom: 2px
+  margin-bottom: 2px;
+  display: block;
 }
 
 .tabactive {

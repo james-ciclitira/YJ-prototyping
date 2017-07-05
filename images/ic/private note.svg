@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="92px" height="115px" viewBox="0 0 92 115" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>ic/private note</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M88.2625,127 L87.4,127 L31.625,127 C26.861544,127 23,123.138456 23,118.375 L23,20.625 C23,15.861544 26.861544,12 31.625,12 L106.375,12 C111.138456,12 115,15.861544 115,20.625 L115,101.125 C115,101.251236 114.991864,101.375571 114.976088,101.497511 C114.914762,102.588551 114.390618,103.854177 113.85,104.575 L91.425,127 L89.1250001,127 L88.2625,127 Z M106.370731,104 L92,104 L92,118.36062 C96.7002479,113.660372 102.671751,107.69474 106.370731,104 Z M31.625,17.75 C30.0371813,17.75 28.75,19.0371813 28.75,20.625 L28.75,118.375 C28.75,119.962819 30.0371813,121.25 31.625,121.25 L86.25,121.25 L86.25,101.125 C86.25,99.5371813 87.5371813,98.25 89.125,98.25 L109.25,98.25 L109.25,20.625 C109.25,19.0371813 107.962819,17.75 106.375,17.75 L31.625,17.75 Z M89.7,46.5 L48.875,46.5 C47.2871813,46.5 46,45.2128187 46,43.625 C46,42.0371813 47.2871813,40.75 48.875,40.75 L89.7,40.75 C91.2878187,40.75 92.575,42.0371813 92.575,43.625 C92.575,45.2128187 91.2878187,46.5 89.7,46.5 Z M89.125,63.75 L48.3,63.75 C46.7121813,63.75 45.425,62.4628187 45.425,60.875 C45.425,59.2871813 46.7121813,58 48.3,58 L89.125,58 C90.7128187,58 92,59.2871813 92,60.875 C92,62.4628187 90.7128187,63.75 89.125,63.75 Z M89.7,81 L48.875,81 C47.2871813,81 46,79.7128187 46,78.125 C46,76.5371813 47.2871813,75.25 48.875,75.25 L89.7,75.25 C91.2878187,75.25 92.575,76.5371813 92.575,78.125 C92.575,79.7128187 91.2878187,81 89.7,81 Z" id="path-1"></path>
+        <filter x="-2.2%" y="-1.7%" width="104.3%" height="103.5%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.12 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Dashboard:-Engage-Employers" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="dashboard---empty" transform="translate(-565.000000, -141.000000)">
+            <g id="Group" transform="translate(383.000000, 129.000000)">
+                <g id="ic/private-note" transform="translate(159.000000, 0.000000)">
+                    <rect id="bounds" x="0" y="0" width="138" height="138"></rect>
+                    <g id="Combined-Shape" fill-rule="nonzero" transform="translate(69.000000, 69.500000) scale(-1, 1) rotate(-180.000000) translate(-69.000000, -69.500000) ">
+                        <use fill-opacity="0.08" fill="#2D2926" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
