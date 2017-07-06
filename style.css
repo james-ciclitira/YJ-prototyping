@@ -44,6 +44,10 @@ button {
   font-family: 'Brother-1816-Bold', sans-serif;
 }
 
+.hint {
+  color: #ABA9A8
+}
+
 .bg-accent {
   background-color: #47d7ac;
 }
@@ -168,7 +172,6 @@ button {
 .indicator a:hover {
   background-color: #eee;
 }
-
 
 .p3 {
   padding-top: 12px;
