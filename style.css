@@ -97,6 +97,14 @@ button {
   border-width: 2px;
   border-color: #F2F2F2;
 }
+
+.perk {
+  height: 166px;
+  width: 288px;
+  border-width: 2px;
+  border-color: #F2F2F2;
+  
+}
 .mw9 {
   max-width: 70rem
 }
