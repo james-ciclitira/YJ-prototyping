@@ -75,6 +75,11 @@ button {
   border-radius: 4px
 }
 
+.note {
+  height: 18px;
+  width: 18px;
+}
+
 .clipping {
   height: 54px;
   width: 54px;
