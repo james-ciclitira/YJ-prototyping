@@ -74,9 +74,16 @@ button {
 .br4 {
   border-radius: 4px
 }
+
 .clipping {
-  height: 50px;
-  width: 50px;
+  height: 54px;
+  width: 54px;
+  border-width: 2px;
+  border-color: #F2F2F2;
+}
+
+.mw9 {
+  max-width: 75rem
 }
 
 .ml25 {
@@ -122,9 +129,22 @@ button {
   width: 40px
 }
 
+.screen {
+  margin-left: 20px;
+  margin-right: 20px
+}
+
+.min-w7 {
+  min-width: 240px
+}
+
 @media screen and (min-width: 30em) {
   .w3-ns {
     width: 4rem;
+  }
+  .screen-ns {
+    margin-left: 240px;
+    margin-right: 40px
   }
   .pv-card {
     padding-left: 48px;
