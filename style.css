@@ -60,6 +60,10 @@ button {
   background-color: #607D8B;
 }
 
+.bg-red {
+  background-color: #E40046
+}
+
 .accent {
   color: rgb(86, 212, 143);
 }
@@ -87,8 +91,18 @@ button {
   border-color: #F2F2F2;
 }
 
+.clip-40 {
+  height: 40px;
+  width: 40px;
+  border-width: 2px;
+  border-color: #F2F2F2;
+}
 .mw9 {
   max-width: 70rem
+}
+
+.bb {
+  border-color: rgba(0,0,0,0.12);
 }
 
 .ml25 {
