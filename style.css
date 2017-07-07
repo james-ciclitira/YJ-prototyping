@@ -74,6 +74,10 @@ button {
 .br4 {
   border-radius: 4px
 }
+.clipping {
+  height: 50px;
+  width: 50px;
+}
 
 .ml25 {
   margin-left: 25px
