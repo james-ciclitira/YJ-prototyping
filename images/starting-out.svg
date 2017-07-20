@@ -181,7 +181,7 @@
                     </text>
                 </g>
             </g>
-            <g id="Start-date" transform="translate(21.000000, 497.000000)">
+            <g id="Start-date" transform="translate(21.000000, 487.000000)">
                 <g id="input/default">
                     <g>
                         <text id="Label" font-family="Karla-Regular, Karla" font-size="15" font-weight="normal" line-spacing="21" fill="#2D2926">
@@ -211,7 +211,7 @@
                     <path d="M8.00648,14 C7.93455276,14 7.8652506,13.9714991 7.81642409,13.9224976 L5.32259654,11.4224199 C5.22231842,11.3224167 5.22651855,11.1639118 5.33152182,11.0689089 C5.43600007,10.9739059 5.60348028,10.977406 5.70270836,11.0774091 L8.00648,13.3869809 L15.2979067,6.07725365 C15.3976598,5.97725054 15.564615,5.97425044 15.6690933,6.06875338 C15.7740965,6.16375634 15.7782967,6.32226126 15.6780185,6.42226437 L8.19653591,13.9224976 C8.14770939,13.9714991 8.07840723,14 8.00648,14" id="Fill-1" stroke="#FFFFFF" stroke-width="2" fill="#FFFFFF" fill-rule="evenodd"></path>
                 </g>
             </g>
-            <g id="input/default" transform="translate(316.000000, 497.000000)">
+            <g id="input/default" transform="translate(316.000000, 487.000000)">
                 <g>
                     <text id="Label" font-family="Karla-Regular, Karla" font-size="15" font-weight="normal" line-spacing="21" fill="#2D2926">
                         <tspan x="0" y="14">Estimated duration</tspan>
