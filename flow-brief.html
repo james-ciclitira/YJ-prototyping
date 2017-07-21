@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flow-breif</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<style>
+textarea,
+input {
+    display: block;
+    margin: 0;
+    width: 80%;
+    font-size: 18px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-border-radius: none;
+    -moz-border-radius: none;
+    -ms-border-radius: none;
+    -o-border-radius: none;
+    border-radius: none;
+    padding: 4px;
+    border: none;
+    margin-left: 40px;
+    color: rgba(0, 0, 0, 0.32);
+}
+
+textarea,
+input:focus {
+    outline: none;
+    border-bottom: solid 2px rgba(71, 215, 172, 0.48);
+    color: rgba(0, 0, 0, 0.87);
+}
+
+button {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 4px;
+    background-color: rgb(250, 250, 250);
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.clicked {
+    background-color: rgb(71, 215, 172);
+    color: rgb(255, 255, 255);
+}
+
+.arrow {
+    font-size: 10px;
+    padding-top: 3px
+}
+</style>
+
+<body style='background-color: #F0F0F0; height: 2000px'>
+    <header class="w-100 bg-white pv2 ph3 db relative fixed" style="height: 56px">
+        <a href="index.html"><img class="pl3 pointer" src="images/logo.svg"></a>
+        <a class="ml2 fw6 fr mt2 pt1 o-70">Save & Exit</a>
+        <div id="indicator" style="height: 4px; bottom: -4px; z-index: 2" class="absolute w-10 left-0 bg-accent "></div>
+    </header>
+    <div class="w-100 overflow-hidden">
+        <div class="mw8 center">
+            <h1 class="mb3 mt5">Creating a breif</h1>
+            <div class="pb3 pt4 bg-white mb3" style="padding-right: 20px; padding-left: 20px">
+                <div id="question-1" class="pv3">
+                    <p class="accent dib">1.<i class="fa fa-arrow-right arrow v-top pl2"></i></p>
+                    <p class="dib f4 pl3">What do you need a freelancer for?</p>
+                    <input type="" name="" autofocus>
+                </div>
+                <div id="question-2" class="o-30 pv3">
+                    <p class="accent dib">2.<i class="fa fa-arrow-right arrow v-top pl2"></i></p>
+                    <p class="dib f4 pl3">Project description</p>
+                    <textarea rows="2" cols="50" name="comment" form=""></textarea>
+                    <p class="f7" style='margin-left: 40px'>SHIFT + ENTER to add a line break</p>
+                </div>
+                <div id="question-3" class="o-30 pv3">
+                    <div>
+                        <p class="accent dib">3.<i class="fa fa-arrow-right arrow v-top pl2"></i></p>
+                        <p class="dib f4 pl3">What type of freelancers are you looking for?</p>
+                    </div>
+                    <div style="margin-left: 40px;">
+                        <button id="button" class="dib w-20 pointer ma2">Client Services</button>
+                        <button id="button" class="dib w-20 pointer ma2">Creative</button>
+                        <button id="button" class="dib w-20 pointer ma2">Data</button>
+                        <button id="button" class="dib w-20 pointer ma2">Designer</button>
+                        <button id="button" class="dib w-20 pointer ma2">Developers</button>
+                        <button id="button" class="dib w-20 pointer ma2">Public Relations</button>
+                        <button id="button" class="dib w-20 pointer ma2">Project Management</button>
+                        <button id="button" class="dib w-20 pointer ma2">QA/Testing</button>
+                        <button id="button" class="dib w-20 pointer ma2">Social</button>
+                        <button id="button" class="dib w-20 pointer ma2">Project strategy</button>
+                        <button id="button" class="dib w-20 pointer ma2">Studio</button>
+                        <button id="button" class="dib w-20 pointer ma2">UX</button>
+                        <button id="button" class="dib w-20 pointer ma2">Film & motion</button>
+                        <button id="button" class="dib w-20 pointer ma2">Market Research</button>
+                        <button id="button" class="dib w-20 pointer ma2">Other</button>
+                        <p class="f6 black-50 mt4">Select as many or a few as appropriate</p>
+                        <p>Can't find what you’ need? <span class="link b pointer"> We here help</span></p>
+                    </div>
+                </div>
+                <div id="question-4" class="o-30 pv3">
+                    <p class="accent dib">4.<i class="fa fa-arrow-right arrow v-top pl2"></i></p>
+                    <p class="dib f4 pl3">When would you need this freelancer by?</p>
+                    <input type="date" placeholder="DD/MM/YYYY" name="">
+                </div>
+                <div id="question-5" class="o-30 pv3">
+                    <p class="accent dib">5.<i class="fa fa-arrow-right arrow v-top pl2"></i></p>
+                    <p class="dib f4 pl3">How long do you expect the project to last?</p>
+                    <input type="" name="">
+                </div>
+                <div id="question-6" class="o-30 pv3">
+                    <p class="accent dib">6.<i class="fa fa-arrow-right arrow v-top pl2"></i></p>
+                    <p class="dib f4 pl3">What is your budget for a day rate?*</p>
+                    <input type="" name="">
+                    <p style="margin-left: 40px" class="f6 i pt3">*This doesn't have to be exact and can be changed later.
+                        <br> The price is in GBP and excludes tax.</p>
+                </div>
+                <div id="question-7" class="o-30 pv3">
+                    <div>
+                        <p class="accent dib">7.<i class="fa fa-arrow-right arrow v-top pl2"></i></p>
+                        <p class="dib f4 pl3">Where can the freelancer work from</p>
+                    </div>
+                    <div style="margin-left: 40px;">
+                        <button id="button" class="dib w-20 pointer ma2">On-site or remotely</button>
+                        <button id="button" class="dib w-20 pointer ma2">Onsite only</button>
+                        <button id="button" class="dib w-20 pointer ma2">Remote only</button>
+                    </div>
+                </div>
+                <div id="question-8" class="o-30 pv3">
+                    <div>
+                        <p class="accent dib">8.<i class="fa fa-arrow-right arrow v-top pl2"></i></p>
+                        <p class="dib f4 pl3">How would you like this breif to be displayed?</p>
+                    </div>
+                    <div style="margin-left: 40px;">
+                        <button id="button" class="dib w-20 pointer ma2">Public</button>
+                        <button id="button" class="dib w-20 pointer ma2">Private</button>
+                        <p class="f7 pt3">Public - Any relevant freelancer can view & express interest in the breif
+                            <br>
+                            <br>Private - Only ‘shortlisted’ freelancers will be shown the brief </p>
+                    </div>
+                </div>
+                <div id="question-9" class="o-30 pv3">
+                    <div>
+                        <p class="accent dib">9.<i class="fa fa-arrow-right arrow v-top pl2"></i></p>
+                        <p class="dib f4 pl3">Do you need any help with shortlisting freelancers?</p>
+                    </div>
+                    <div style="margin-left: 40px;">
+                        <button id="button" class="dib w-20 pointer ma2">Yes, please</button>
+                        <button id="button" class="dib w-20 pointer ma2">No, thanks</button>
+                    </div>
+                </div>
+                <hr class="mt4">
+                <div class="overflow-hidden ">
+                    <a class="f6 no-underline br-pill br-accent b ba bw1 pa-button dib pa-button mt3 fr" href="flow-brief.html">Find a freelancers</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+$("#button").click(function() {
+    $("#button").addClass('clicked');
+});
+</script>
+
+</html>
