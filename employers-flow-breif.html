@@ -19,24 +19,29 @@ input {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
     box-shadow: none;
-    -webkit-border-radius: none;
-    -moz-border-radius: none;
-    -ms-border-radius: none;
-    -o-border-radius: none;
-    border-radius: none;
     padding: 4px;
     border: none;
-    margin-left: 40px;
+    margin-left: 44px;
     color: rgba(0, 0, 0, 0.32);
+    caret-color: #1CA683
 }
 
-textarea,
 input:focus {
     outline: none;
-    border-bottom: solid 2px rgba(71, 215, 172, 0.48);
+    border-bottom: solid 2px rgba(28, 166, 131, 0.33);
+    color: rgba(0, 0, 0, 0.87);
+}
+
+textarea {
+    border: 0 none white;
+    overflow: hidden;
+    resize: none;
+}
+
+textarea:focus {
+    outline: none;
+    border-bottom: solid 2px rgba(28, 166, 131, 0.33);
     color: rgba(0, 0, 0, 0.87);
 }
 
@@ -59,13 +64,21 @@ button {
     font-size: 10px;
     padding-top: 3px
 }
+
+.ml-44 {
+    margin-left: 44px
+}
 </style>
 
-<body style='background-color: #F0F0F0; height: 2000px'>
-    <header class="w-100 bg-white pv2 ph3 db relative fixed" style="height: 56px">
+<body onload="init();" style='background-color: #F0F0F0; height: 2000px'>
+    <header class="w-100 bg-white pv2 ph3 db relative fixed shadow-1" style="height: 56px">
         <a href="index.html"><img class="pl3 pointer" src="images/logo.svg"></a>
+        <div class="dib v-top mt2 pl3-ns pl0">
+                <a class="no-underline v-mid pl3 mt2 black-70 b" href="employers-flow-breif.html">Flow</a>
+                <a class="no-underline v-mid pl3 mt2 black-50" href="employers-flow-breif-alt.html">Form</a>
+            </div>
         <a class="ml2 fw6 fr mt2 pt1 o-70">Save & Exit</a>
-        <div id="indicator" style="height: 4px; bottom: -4px; z-index: 2" class="absolute w-10 left-0 bg-accent "></div>
+        <div id="indicator" style="height: 4px; bottom: -4px; z-index: -2" class="absolute w-10 left-0 bg-accent"></div>
     </header>
     <div class="w-100 overflow-hidden">
         <div class="mw8 center">
@@ -73,16 +86,20 @@ button {
             <div class="pb3 pt4 bg-white mb3" style="padding-right: 20px; padding-left: 20px">
                 <div id="question-1" class="pv3">
                     <p class="accent dib">1.<i class="fa fa-arrow-right arrow v-top pl2"></i></p>
-                    <p class="dib f4 pl3">What do you need a freelancer for?</p>
+                    <p class="dib f4 pl3">What the title of the project?</p>
                     <input type="" name="" autofocus>
+                    <div>
+                    <button class="bg-accent white pv2 ml-44 mt4">Next</button>
+                    <a class="pl1 black-50">Press enter</a>
+                    </div>
                 </div>
-                <div id="question-2" class="o-30 pv3">
+                <div id="question-2" class="o-100 pv3">
                     <p class="accent dib">2.<i class="fa fa-arrow-right arrow v-top pl2"></i></p>
                     <p class="dib f4 pl3">Project description</p>
-                    <textarea rows="2" cols="50" name="comment" form=""></textarea>
-                    <p class="f7" style='margin-left: 40px'>SHIFT + ENTER to add a line break</p>
+                    <textarea rows="3" style="height:1em;" id="text"></textarea>
+                    <p class="f7 black-50" style='margin-left: 48px'>SHIFT + ENTER to add a line break</p>
                 </div>
-                <div id="question-3" class="o-30 pv3">
+                <div id="question-3" class="o-100 pv3">
                     <div>
                         <p class="accent dib">3.<i class="fa fa-arrow-right arrow v-top pl2"></i></p>
                         <p class="dib f4 pl3">What type of freelancers are you looking for?</p>
@@ -107,35 +124,35 @@ button {
                         <p>Can't find what you’ need? <span class="link b pointer"> We here help</span></p>
                     </div>
                 </div>
-                <div id="question-4" class="o-30 pv3">
+                <div id="question-4" class="o-100 pv3">
                     <p class="accent dib">4.<i class="fa fa-arrow-right arrow v-top pl2"></i></p>
                     <p class="dib f4 pl3">When would you need this freelancer by?</p>
-                    <input type="date" placeholder="DD/MM/YYYY" name="">
+                    <input type="date" class="w-40" style="font-family:Karla" placeholder="DD/MM/YYYY" name="">
                 </div>
-                <div id="question-5" class="o-30 pv3">
+                <div id="question-5" class="o-100 pv3">
                     <p class="accent dib">5.<i class="fa fa-arrow-right arrow v-top pl2"></i></p>
                     <p class="dib f4 pl3">How long do you expect the project to last?</p>
                     <input type="" name="">
                 </div>
-                <div id="question-6" class="o-30 pv3">
+                <div id="question-6" class="o-100 pv3">
                     <p class="accent dib">6.<i class="fa fa-arrow-right arrow v-top pl2"></i></p>
-                    <p class="dib f4 pl3">What is your budget for a day rate?*</p>
-                    <input type="" name="">
-                    <p style="margin-left: 40px" class="f6 i pt3">*This doesn't have to be exact and can be changed later.
+                    <p class="dib f4 pl3">What is your budget for a day rate?</p>
+                    <div class="relative"><span class="ml-44 absolute f4" style="top:3px">£</span><input class="pl3" type="number" name=""></div>
+                    <p style="margin-left: 40px" class="f6 i pt3">This doesn't have to be exact and can be changed later.
                         <br> The price is in GBP and excludes tax.</p>
                 </div>
-                <div id="question-7" class="o-30 pv3">
+                <div id="question-7" class="o-100 pv3">
                     <div>
                         <p class="accent dib">7.<i class="fa fa-arrow-right arrow v-top pl2"></i></p>
                         <p class="dib f4 pl3">Where can the freelancer work from</p>
                     </div>
                     <div style="margin-left: 40px;">
-                        <button id="button" class="dib w-20 pointer ma2">On-site or remotely</button>
-                        <button id="button" class="dib w-20 pointer ma2">Onsite only</button>
-                        <button id="button" class="dib w-20 pointer ma2">Remote only</button>
+                        <button id="button" class="dib pointer ma2">On-site or remotely</button>
+                        <button id="button" class="dib pointer ma2">Onsite only</button>
+                        <button id="button" class="dib pointer ma2">Remote only</button>
                     </div>
                 </div>
-                <div id="question-8" class="o-30 pv3">
+                <div id="question-8" class="o-100 pv3">
                     <div>
                         <p class="accent dib">8.<i class="fa fa-arrow-right arrow v-top pl2"></i></p>
                         <p class="dib f4 pl3">How would you like this breif to be displayed?</p>
@@ -143,12 +160,11 @@ button {
                     <div style="margin-left: 40px;">
                         <button id="button" class="dib w-20 pointer ma2">Public</button>
                         <button id="button" class="dib w-20 pointer ma2">Private</button>
-                        <p class="f7 pt3">Public - Any relevant freelancer can view & express interest in the breif
-                            <br>
+                        <p class="f7 pt3 i">Public - Any relevant freelancer can view & express interest in the breif
                             <br>Private - Only ‘shortlisted’ freelancers will be shown the brief </p>
                     </div>
                 </div>
-                <div id="question-9" class="o-30 pv3">
+                <div id="question-9" class="o-100 pv3">
                     <div>
                         <p class="accent dib">9.<i class="fa fa-arrow-right arrow v-top pl2"></i></p>
                         <p class="dib f4 pl3">Do you need any help with shortlisting freelancers?</p>
@@ -170,6 +186,64 @@ button {
 $("#button").click(function() {
     $("#button").addClass('clicked');
 });
+
+jQuery.extend(jQuery.expr[':'], {
+    focusable: function(el, index, selector) {
+        return $(el).is('a, :input, [tabindex]');
+    }
+});
+
+$(document).on('keypress', 'input,select', function(e) {
+    if (e.which == 13) {
+        e.preventDefault();
+        var $canfocus = $(':focusable');
+        var index = $canfocus.index(document.activeElement) + 1;
+        if (index >= $canfocus.length) index = 0;
+        $canfocus.eq(index).focus();
+    }
+});
+
+$("textarea").keydown(function(e) {
+    // Enter was pressed without shift key
+    if (e.keyCode == 13 && !e.shiftKey) {
+        // prevent default behavior
+        e.preventDefault();
+    }
+});
+
+
+var observe;
+if (window.attachEvent) {
+    observe = function(element, event, handler) {
+        element.attachEvent('on' + event, handler);
+    };
+} else {
+    observe = function(element, event, handler) {
+        element.addEventListener(event, handler, false);
+    };
+}
+
+function init() {
+    var text = document.getElementById('text');
+
+    function resize() {
+        text.style.height = 'auto';
+        text.style.height = text.scrollHeight + 'px';
+    }
+    /* 0-timeout to get the already changed text */
+    function delayedResize() {
+        window.setTimeout(resize, 0);
+    }
+    observe(text, 'change', resize);
+    observe(text, 'cut', delayedResize);
+    observe(text, 'paste', delayedResize);
+    observe(text, 'drop', delayedResize);
+    observe(text, 'keydown', delayedResize);
+
+    text.focus();
+    text.select();
+    resize();
+}
 </script>
 
 </html>
