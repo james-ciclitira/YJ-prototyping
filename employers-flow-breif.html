@@ -82,21 +82,22 @@ button {
     </header>
     <div class="w-100 overflow-hidden">
         <div class="mw8 center">
-            <h1 class="mb3 mt5">Creating a breif</h1>
-            <div class="pb3 pt4 bg-white mb3" style="padding-right: 20px; padding-left: 20px">
+            <div class="pb3 pt2 bg-white mb3" style="padding-right: 20px; padding-left: 20px; margin-top: 72px">
+            <h1 class="mb3 pt0 ">Create a breif</h1>
+
                 <div id="question-1" class="pv3">
                     <p class="accent dib">1.<i class="fa fa-arrow-right arrow v-top pl2"></i></p>
                     <p class="dib f4 pl3">What the title of the project?</p>
-                    <input type="" name="" autofocus>
+                    <input type="" name="" tabindex="1" autofocus>
                     <div>
-                    <button class="bg-accent white pv2 ml-44 mt4">Next</button>
+                    <div class="bg-accent white pv2 ph3 br2 dib ml-44 mt4">Next</div>
                     <a class="pl1 black-50">Press enter</a>
                     </div>
                 </div>
                 <div id="question-2" class="o-100 pv3">
                     <p class="accent dib">2.<i class="fa fa-arrow-right arrow v-top pl2"></i></p>
                     <p class="dib f4 pl3">Project description</p>
-                    <textarea rows="3" style="height:1em;" id="text"></textarea>
+                    <textarea tabindex="2" rows="3" style="height:1em;" id="text"></textarea>
                     <p class="f7 black-50" style='margin-left: 48px'>SHIFT + ENTER to add a line break</p>
                 </div>
                 <div id="question-3" class="o-100 pv3">
@@ -189,7 +190,7 @@ $("#button").click(function() {
 
 jQuery.extend(jQuery.expr[':'], {
     focusable: function(el, index, selector) {
-        return $(el).is('a, :input, [tabindex]');
+        return $(el).is('a, button, :input, [tabindex]');
     }
 });
 
