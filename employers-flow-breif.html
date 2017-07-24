@@ -84,18 +84,18 @@ button {
     <div class="w-100 overflow-hidden">
         <div class="center" style="max-width: 60em">
             <div class="pb3 pt2 bg-white mb3" style="padding-right: 20px; padding-left: 20px; margin-top: 72px">
-                <div id="question-1" class="pv3">
+                <fieldset id="question-1" class="pv3 bn">
                     <p class="accent dib">1.<i class="fa fa-arrow-right arrow v-top pl2"></i></p>
-                    <p class="dib f4 pl3">What do you need a freelancer for?*</p>
+                    <label class="dib f4 pl3">What do you need a freelancer for?*</label>
                     <input type="" name="" autofocus>
-                </div>
-                <div id="question-2" class="o-100 pv3">
+                </fieldset>
+                <fieldset id="question-2" class="o-100 pv3 bn">
                     <p class="accent dib">2.<i class="fa fa-arrow-right arrow v-top pl2"></i></p>
-                    <p class="dib f4 pl3">Project description</p>
+                    <label class="dib f4 pl3">Project description</label>
                     <textarea rows="3" style="height:1em;" id="text"></textarea>
                     <p class="f7 black-50" style='margin-left: 48px'>SHIFT + ENTER to add a line break</p>
-                </div>
-                <div id="question-3" class="o-100 pv3">
+                </fieldset>
+                <fieldset id="question-3" class="o-100 pv3 bn">
                     <div>
                         <p class="accent dib">3.<i class="fa fa-arrow-right arrow v-top pl2"></i></p>
                         <p class="dib f4 pl3">What type of freelancers are you looking for?</p>
@@ -119,27 +119,27 @@ button {
                         <p class="f6 black-50 mt4">Select as many or a few as appropriate</p>
                         <p>Can't find what you’ need? <span class="link b pointer"> We here help</span></p>
                     </div>
-                </div>
-                <div id="question-4" class="o-100 pv3">
+                </fieldset>
+                <fieldset id="question-4" class="o-100 pv3 bn">
                     <p class="accent dib">4.<i class="fa fa-arrow-right arrow v-top pl2"></i></p>
-                    <p class="dib f4 pl3">When would you need this freelancer by?</p>
+                    <label class="dib f4 pl3">When would you need this freelancer by?</label>
                     <input type="date" class="w-40" style="font-family:Karla" placeholder="DD/MM/YYYY" name="">
-                </div>
-                <div id="question-5" class="o-100 pv3">
+                </fieldset>
+                <fieldset id="question-5" class="o-100 pv3 bn">
                     <p class="accent dib">5.<i class="fa fa-arrow-right arrow v-top pl2"></i></p>
-                    <p class="dib f4 pl3">How long do you expect the project to last?</p>
+                    <label class="dib f4 pl3">How long do you expect the project to last?</label>
                     <input type="" name="">
-                </div>
-                <div id="question-6" class="o-100 pv3">
+                </fieldset>
+                <fieldset id="question-6" class="o-100 pv3 bn">
                     <p class="accent dib">6.<i class="fa fa-arrow-right arrow v-top pl2"></i></p>
-                    <p class="dib f4 pl3">What is your budget for a day rate?</p>
+                    <label class="dib f4 pl3">What is your budget for a day rate?</label>
                     <div class="relative"><span class="ml-44 absolute f4" style="top:3px">£</span>
                         <input class="pl3" type="number" name="">
                     </div>
                     <p style="margin-left: 40px" class="f6 i pt3">This doesn't have to be exact and can be changed later.
                         <br> The price is in GBP and excludes tax.</p>
-                </div>
-                <div id="question-7" class="o-100 pv3">
+                </fieldset>
+                <fieldset id="question-7" class="o-100 pv3 bn">
                     <div>
                         <p class="accent dib">7.<i class="fa fa-arrow-right arrow v-top pl2"></i></p>
                         <p class="dib f4 pl3">Where can the freelancer work from</p>
@@ -149,8 +149,8 @@ button {
                         <button id="button" class="dib pointer ma2">Onsite only</button>
                         <button id="button" class="dib pointer ma2">Remote only</button>
                     </div>
-                </div>
-                <div id="question-8" class="o-100 pv3">
+                </fieldset>
+                <fieldset id="question-8" class="o-100 pv3 bn">
                     <div>
                         <p class="accent dib">8.<i class="fa fa-arrow-right arrow v-top pl2"></i></p>
                         <p class="dib f4 pl3">How would you like this breif to be displayed?</p>
@@ -161,27 +161,27 @@ button {
                         <p class="f7 pt3 i">Public - Any relevant freelancer can view & express interest in the breif
                             <br>Private - Only ‘shortlisted’ freelancers will be shown the brief </p>
                     </div>
+            </div>
+            <fieldset id="question-9" class="o-100 pv3 bn">
+                <div>
+                    <p class="accent dib">9.<i class="fa fa-arrow-right arrow v-top pl2"></i></p>
+                    <p class="dib f4 pl3">Do you need any help with shortlisting freelancers?</p>
                 </div>
-                <div id="question-9" class="o-100 pv3">
-                    <div>
-                        <p class="accent dib">9.<i class="fa fa-arrow-right arrow v-top pl2"></i></p>
-                        <p class="dib f4 pl3">Do you need any help with shortlisting freelancers?</p>
-                    </div>
-                    <div style="margin-left: 40px;">
-                        <button id="button" class="dib w-20 pointer ma2">Yes, please</button>
-                        <button id="button" class="dib w-20 pointer ma2">No, thanks</button>
-                    </div>
+                <div style="margin-left: 40px;">
+                    <button id="button" class="dib w-20 pointer ma2">Yes, please</button>
+                    <button id="button" class="dib w-20 pointer ma2">No, thanks</button>
                 </div>
-                <hr class="mt4">
-                <div class="overflow-hidden ">
-                    <a class="f6 no-underline br-pill br-accent b ba bw1 pa-button dib pa-button mt3 fr" href="flow-brief.html">Review & Post</a>
-                </div>
+            </fieldset>
+            <hr class="mt4">
+            <div class="overflow-hidden ">
+                <a class="f6 no-underline br-pill br-accent b ba bw1 pa-button dib pa-button mt3 fr" href="flow-brief.html">Review & Post</a>
             </div>
         </div>
     </div>
+    </div>
     <div class="fixed bottom-0 bg-white w-100 pb3 shadow-1">
         <div class="db center" style="max-width: 60em">
-            <div class="dib ml3">
+            <div class="dib ml5">
                 <p class="pa0 link">0 of 10 answered</p>
                 <div class="bg-black-10 br4" style="height: 10px; width: 180px">
                     <div class="bg-accent br4" style="height: 10px; width: 12px">
@@ -189,65 +189,58 @@ button {
                 </div>
             </div>
             <div class="dib v-mid pt4">
-                <button onclick="focusNext()" class="bg-accent white pv2 ph3 br2 dib pointer ml3">Next</button>
+                <button onclick="focusNext()" class="bg-accent white pv2 ph3 br2 dib pointer ml5">Next</button>
                 <a class="pl1 black-50">Or press enter</a>
             </div>
         </div>
     </div>
 </body>
 <script>
+function tab(e) {
+    if (e.which == 13) {
+        e.target.nextSibling.nextSibling.focus();
+        e.preventDefault();
+    }
+}
+var inputs = document.getElementsByTagName('input');
+for (var x = 0; x < inputs.length; x++) {
+    var input = inputs[x];
+    input.onkeypress = tab;
+}
 
 
-$('input').live("keypress", function(e) {
-                /* ENTER PRESSED*/
-                if (e.keyCode == 13) {
-                    /* FOCUS ELEMENT */
-                    var inputs = $(this).parents("form").eq(0).find(":input");
-                    var idx = inputs.index(this);
- 
-                    if (idx == inputs.length - 1) {
-                        inputs[0].select()
-                    } else {
-                        inputs[idx + 1].focus(); //  handles submit buttons
-                        inputs[idx + 1].select();
-                    }
-                    return false;
-                }
-            });
+var observe;
+if (window.attachEvent) {
+    observe = function(element, event, handler) {
+        element.attachEvent('on' + event, handler);
+    };
+} else {
+    observe = function(element, event, handler) {
+        element.addEventListener(event, handler, false);
+    };
+}
 
-// var observe;
-// if (window.attachEvent) {
-//     observe = function(element, event, handler) {
-//         element.attachEvent('on' + event, handler);
-//     };
-// } else {
-//     observe = function(element, event, handler) {
-//         element.addEventListener(event, handler, false);
-//     };
-// }
+function init() {
+    var text = document.getElementById('text');
 
-// function init() {
-//     var text = document.getElementById('text');
+    function resize() {
+        text.style.height = 'auto';
+        text.style.height = text.scrollHeight + 'px';
+    }
 
-//     function resize() {
-//         text.style.height = 'auto';
-//         text.style.height = text.scrollHeight + 'px';
-//     }
+    function delayedResize() {
+        window.setTimeout(resize, 0);
+    }
+    observe(text, 'change', resize);
+    observe(text, 'cut', delayedResize);
+    observe(text, 'paste', delayedResize);
+    observe(text, 'drop', delayedResize);
+    observe(text, 'keydown', delayedResize);
 
-//     function delayedResize() {
-//         window.setTimeout(resize, 0);
-//     }
-//     observe(text, 'change', resize);
-//     observe(text, 'cut', delayedResize);
-//     observe(text, 'paste', delayedResize);
-//     observe(text, 'drop', delayedResize);
-//     observe(text, 'keydown', delayedResize);
-
-//     text.focus();
-//     text.select();
-//     resize();
-// }
-
+    text.focus();
+    text.select();
+    resize();
+}
 </script>
 
 </html>
