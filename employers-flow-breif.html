@@ -158,7 +158,7 @@ button {
                         <button id="button" class="dib pointer ma2">Remote only</button>
                     </div>
                 </fieldset>
-                <fieldset id="question-8" class="o-100 pv3 bn">
+                <fieldset id="question-8" class="o-50 pv3 bn">
                     <div>
                         <p class="accent dib">8.<i class="fa fa-arrow-right arrow v-top pl2"></i></p>
                         <p class="dib f4 pl3">How would you like this breif to be displayed?</p>
@@ -170,7 +170,7 @@ button {
                             <br>Private - Only ‘shortlisted’ freelancers will be shown the brief </p>
                     </div>
             </div>
-            <fieldset id="question-9" class="o-100 pv3 bn">
+            <fieldset id="question-9" class="o-50 pv3 bn">
                 <div>
                     <p class="accent dib">9.<i class="fa fa-arrow-right arrow v-top pl2"></i></p>
                     <p class="dib f4 pl3">Do you need any help with shortlisting freelancers?</p>
@@ -205,26 +205,14 @@ button {
 </body>
 <script>
 
-
+// button toggle
 $('button').click(function() {  
-    $('button').not(this).removeClass('clicked'); // remove buttonactive from the others
-    $(this).toggleClass('clicked'); // toggle current clicked element
+    $('button').not(this).removeClass('clicked');
+    $(this).toggleClass('clicked');
 });
 
 
-function tab(e) {
-    if (e.which == 13) {
-        e.target.nextSibling.nextSibling.focus();
-        e.preventDefault();
-    }
-}
-var inputs = document.getElementsByTagName('input');
-for (var x = 0; x < inputs.length; x++) {
-    var input = inputs[x];
-    input.onkeypress = tab;
-}
-
-
+// text area resize
 var observe;
 if (window.attachEvent) {
     observe = function(element, event, handler) {
@@ -258,7 +246,7 @@ function init() {
     resize();
 }
 
-
+// smooth scroll
 $('a[href*="#"]')
   .not('[href="#"]')
   .not('[href="#0"]')
@@ -287,6 +275,9 @@ $('a[href*="#"]')
       }
     }
   });
+
+
+
 </script>
 
 </html>

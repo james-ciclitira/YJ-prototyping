@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="10px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>ic/close</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Dashboard:-Engage-Freelancers" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.48">
+        <g id="Freelancer-Dashboard---First-Time-User" transform="translate(-1215.000000, -526.000000)">
+            <g id="ic/close" transform="translate(1211.000000, 522.000000)">
+                <g>
+                    <rect id="Frame" x="0" y="0" width="18" height="18"></rect>
+                    <path d="M10.4142136,9 L13.7071068,5.70710678 C14.0976311,5.31658249 14.0976311,4.68341751 13.7071068,4.29289322 C13.3165825,3.90236893 12.6834175,3.90236893 12.2928932,4.29289322 L9,7.58578644 L5.70710678,4.29289322 C5.31658249,3.90236893 4.68341751,3.90236893 4.29289322,4.29289322 C3.90236893,4.68341751 3.90236893,5.31658249 4.29289322,5.70710678 L7.58578644,9 L4.29289322,12.2928932 C3.90236893,12.6834175 3.90236893,13.3165825 4.29289322,13.7071068 C4.68341751,14.0976311 5.31658249,14.0976311 5.70710678,13.7071068 L9,10.4142136 L12.2928932,13.7071068 C12.6834175,14.0976311 13.3165825,14.0976311 13.7071068,13.7071068 C14.0976311,13.3165825 14.0976311,12.6834175 13.7071068,12.2928932 L10.4142136,9 Z" id="Combined-Shape" fill="#2D2926" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
