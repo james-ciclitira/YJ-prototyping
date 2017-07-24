@@ -25,13 +25,18 @@ input {
     margin-left: 44px;
     color: rgba(0, 0, 0, 0.32);
     caret-color: #1CA683;
-    margin-top: 25px
+    margin-top: 25px;
+    background-color: #fafafa
 }
 
 input:focus {
     outline: none;
     border-bottom: solid 2px rgba(28, 166, 131, 0.33);
     color: rgba(0, 0, 0, 0.87);
+}
+
+fieldset:focus {
+    outline: none;
 }
 
 textarea {
@@ -52,7 +57,7 @@ button {
     padding-left: 12px;
     padding-right: 12px;
     border-radius: 4px;
-    background-color: rgb(250, 250, 250);
+    background-color: #f5f5f5;
     color: rgba(0, 0, 0, 0.54);
 }
 
@@ -71,8 +76,8 @@ button {
 }
 </style>
 
-<body onload="init();" style='background-color: #fff; height: 2000px'>
-    <header class="dn w-100 bg-white pv2 ph3  relative fixed shadow-1" style="height: 56px">
+<body onload="init();" style='background-color: #fafafa; height: 2000px'>
+<!--     <header class="dn w-100 bg-white pv2 ph3  relative fixed shadow-1" style="height: 56px">
         <a href="index.html"><img class="pl3 pointer" src="images/logo.svg"></a>
         <div class="dib v-top mt2 pl3-ns pl0">
             <a class="no-underline v-mid pl3 mt2 black-70 b" href="employers-flow-breif.html">Flow</a>
@@ -80,10 +85,13 @@ button {
         </div>
         <a class="ml2 fw6 fr mt2 pt1 o-70">Save & Exit</a>
         <div id="indicator" style="height: 4px; bottom: -4px; z-index: -2" class="absolute w-10 left-0 bg-accent"></div>
-    </header>
+    </header> -->
+
+
+
     <div class="w-100 overflow-hidden">
         <div class="center" style="max-width: 60em">
-            <div class="pb3 pt2 bg-white mb3" style="padding-right: 20px; padding-left: 20px; margin-top: 72px">
+            <div class="pb3 pt2  mb3" style="padding-right: 20px; padding-left: 20px; margin-top: 25px">
                 <fieldset id="question-1" class="pv3 bn">
                     <p class="accent dib">1.<i class="fa fa-arrow-right arrow v-top pl2"></i></p>
                     <label class="dib f4 pl3">What do you need a freelancer for?*</label>
@@ -189,13 +197,21 @@ button {
                 </div>
             </div>
             <div class="dib v-mid pt4">
-                <button onclick="focusNext()" class="bg-accent white pv2 ph3 br2 dib pointer ml5">Next</button>
+                <a href="#question-2" onclick="focusNext()" class="bg-accent white pv2 ph3 br2 dib pointer ml5">Next</a>
                 <a class="pl1 black-50">Or press enter</a>
             </div>
         </div>
     </div>
 </body>
 <script>
+
+
+$('button').click(function() {  
+    $('button').not(this).removeClass('clicked'); // remove buttonactive from the others
+    $(this).toggleClass('clicked'); // toggle current clicked element
+});
+
+
 function tab(e) {
     if (e.which == 13) {
         e.target.nextSibling.nextSibling.focus();
@@ -241,6 +257,36 @@ function init() {
     text.select();
     resize();
 }
+
+
+$('a[href*="#"]')
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 250, function() {
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
 </script>
 
 </html>
