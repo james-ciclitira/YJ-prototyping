@@ -24,7 +24,8 @@ input {
     border: none;
     margin-left: 44px;
     color: rgba(0, 0, 0, 0.32);
-    caret-color: #1CA683
+    caret-color: #1CA683;
+    margin-top: 25px
 }
 
 input:focus {
@@ -70,34 +71,28 @@ button {
 }
 </style>
 
-<body onload="init();" style='background-color: #F0F0F0; height: 2000px'>
-    <header class="w-100 bg-white pv2 ph3 db relative fixed shadow-1" style="height: 56px">
+<body onload="init();" style='background-color: #fff; height: 2000px'>
+    <header class="dn w-100 bg-white pv2 ph3  relative fixed shadow-1" style="height: 56px">
         <a href="index.html"><img class="pl3 pointer" src="images/logo.svg"></a>
         <div class="dib v-top mt2 pl3-ns pl0">
-                <a class="no-underline v-mid pl3 mt2 black-70 b" href="employers-flow-breif.html">Flow</a>
-                <a class="no-underline v-mid pl3 mt2 black-50" href="employers-flow-breif-alt.html">Form</a>
-            </div>
+            <a class="no-underline v-mid pl3 mt2 black-70 b" href="employers-flow-breif.html">Flow</a>
+            <a class="no-underline v-mid pl3 mt2 black-50" href="employers-flow-breif-alt.html">Form</a>
+        </div>
         <a class="ml2 fw6 fr mt2 pt1 o-70">Save & Exit</a>
         <div id="indicator" style="height: 4px; bottom: -4px; z-index: -2" class="absolute w-10 left-0 bg-accent"></div>
     </header>
     <div class="w-100 overflow-hidden">
-        <div class="mw8 center">
+        <div class="center" style="max-width: 60em">
             <div class="pb3 pt2 bg-white mb3" style="padding-right: 20px; padding-left: 20px; margin-top: 72px">
-            <h1 class="mb3 pt0 ">Create a breif</h1>
-
                 <div id="question-1" class="pv3">
                     <p class="accent dib">1.<i class="fa fa-arrow-right arrow v-top pl2"></i></p>
-                    <p class="dib f4 pl3">What the title of the project?</p>
-                    <input type="" name="" tabindex="1" autofocus>
-                    <div>
-                    <div class="bg-accent white pv2 ph3 br2 dib ml-44 mt4">Next</div>
-                    <a class="pl1 black-50">Press enter</a>
-                    </div>
+                    <p class="dib f4 pl3">What do you need a freelancer for?*</p>
+                    <input type="" name="" autofocus>
                 </div>
                 <div id="question-2" class="o-100 pv3">
                     <p class="accent dib">2.<i class="fa fa-arrow-right arrow v-top pl2"></i></p>
                     <p class="dib f4 pl3">Project description</p>
-                    <textarea tabindex="2" rows="3" style="height:1em;" id="text"></textarea>
+                    <textarea rows="3" style="height:1em;" id="text"></textarea>
                     <p class="f7 black-50" style='margin-left: 48px'>SHIFT + ENTER to add a line break</p>
                 </div>
                 <div id="question-3" class="o-100 pv3">
@@ -112,7 +107,7 @@ button {
                         <button id="button" class="dib w-20 pointer ma2">Designer</button>
                         <button id="button" class="dib w-20 pointer ma2">Developers</button>
                         <button id="button" class="dib w-20 pointer ma2">Public Relations</button>
-                        <button id="button" class="dib w-20 pointer ma2">Project Management</button>
+                        <button id="button" class="dib w-20 pointer ma2">PM</button>
                         <button id="button" class="dib w-20 pointer ma2">QA/Testing</button>
                         <button id="button" class="dib w-20 pointer ma2">Social</button>
                         <button id="button" class="dib w-20 pointer ma2">Project strategy</button>
@@ -138,7 +133,9 @@ button {
                 <div id="question-6" class="o-100 pv3">
                     <p class="accent dib">6.<i class="fa fa-arrow-right arrow v-top pl2"></i></p>
                     <p class="dib f4 pl3">What is your budget for a day rate?</p>
-                    <div class="relative"><span class="ml-44 absolute f4" style="top:3px">£</span><input class="pl3" type="number" name=""></div>
+                    <div class="relative"><span class="ml-44 absolute f4" style="top:3px">£</span>
+                        <input class="pl3" type="number" name="">
+                    </div>
                     <p style="margin-left: 40px" class="f6 i pt3">This doesn't have to be exact and can be changed later.
                         <br> The price is in GBP and excludes tax.</p>
                 </div>
@@ -177,74 +174,80 @@ button {
                 </div>
                 <hr class="mt4">
                 <div class="overflow-hidden ">
-                    <a class="f6 no-underline br-pill br-accent b ba bw1 pa-button dib pa-button mt3 fr" href="flow-brief.html">Find a freelancers</a>
+                    <a class="f6 no-underline br-pill br-accent b ba bw1 pa-button dib pa-button mt3 fr" href="flow-brief.html">Review & Post</a>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="fixed bottom-0 bg-white w-100 pb3 shadow-1">
+        <div class="db center" style="max-width: 60em">
+            <div class="dib ml3">
+                <p class="pa0 link">0 of 10 answered</p>
+                <div class="bg-black-10 br4" style="height: 10px; width: 180px">
+                    <div class="bg-accent br4" style="height: 10px; width: 12px">
+                    </div>
+                </div>
+            </div>
+            <div class="dib v-mid pt4">
+                <button onclick="focusNext()" class="bg-accent white pv2 ph3 br2 dib pointer ml3">Next</button>
+                <a class="pl1 black-50">Or press enter</a>
             </div>
         </div>
     </div>
 </body>
 <script>
-$("#button").click(function() {
-    $("#button").addClass('clicked');
-});
-
-jQuery.extend(jQuery.expr[':'], {
-    focusable: function(el, index, selector) {
-        return $(el).is('a, button, :input, [tabindex]');
-    }
-});
-
-$(document).on('keypress', 'input,select', function(e) {
-    if (e.which == 13) {
-        e.preventDefault();
-        var $canfocus = $(':focusable');
-        var index = $canfocus.index(document.activeElement) + 1;
-        if (index >= $canfocus.length) index = 0;
-        $canfocus.eq(index).focus();
-    }
-});
-
-$("textarea").keydown(function(e) {
-    // Enter was pressed without shift key
-    if (e.keyCode == 13 && !e.shiftKey) {
-        // prevent default behavior
-        e.preventDefault();
-    }
-});
 
 
-var observe;
-if (window.attachEvent) {
-    observe = function(element, event, handler) {
-        element.attachEvent('on' + event, handler);
-    };
-} else {
-    observe = function(element, event, handler) {
-        element.addEventListener(event, handler, false);
-    };
-}
+$('input').live("keypress", function(e) {
+                /* ENTER PRESSED*/
+                if (e.keyCode == 13) {
+                    /* FOCUS ELEMENT */
+                    var inputs = $(this).parents("form").eq(0).find(":input");
+                    var idx = inputs.index(this);
+ 
+                    if (idx == inputs.length - 1) {
+                        inputs[0].select()
+                    } else {
+                        inputs[idx + 1].focus(); //  handles submit buttons
+                        inputs[idx + 1].select();
+                    }
+                    return false;
+                }
+            });
 
-function init() {
-    var text = document.getElementById('text');
+// var observe;
+// if (window.attachEvent) {
+//     observe = function(element, event, handler) {
+//         element.attachEvent('on' + event, handler);
+//     };
+// } else {
+//     observe = function(element, event, handler) {
+//         element.addEventListener(event, handler, false);
+//     };
+// }
 
-    function resize() {
-        text.style.height = 'auto';
-        text.style.height = text.scrollHeight + 'px';
-    }
-    /* 0-timeout to get the already changed text */
-    function delayedResize() {
-        window.setTimeout(resize, 0);
-    }
-    observe(text, 'change', resize);
-    observe(text, 'cut', delayedResize);
-    observe(text, 'paste', delayedResize);
-    observe(text, 'drop', delayedResize);
-    observe(text, 'keydown', delayedResize);
+// function init() {
+//     var text = document.getElementById('text');
 
-    text.focus();
-    text.select();
-    resize();
-}
+//     function resize() {
+//         text.style.height = 'auto';
+//         text.style.height = text.scrollHeight + 'px';
+//     }
+
+//     function delayedResize() {
+//         window.setTimeout(resize, 0);
+//     }
+//     observe(text, 'change', resize);
+//     observe(text, 'cut', delayedResize);
+//     observe(text, 'paste', delayedResize);
+//     observe(text, 'drop', delayedResize);
+//     observe(text, 'keydown', delayedResize);
+
+//     text.focus();
+//     text.select();
+//     resize();
+// }
+
 </script>
 
 </html>
