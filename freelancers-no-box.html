@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
 <style>
 body {
@@ -154,16 +156,12 @@ img {
                             </div><img class="dib mt4 mr4 fr h1" src="images/ic/arrow.svg">
                         </article>
                     </div>
-                    <div class="mt4">
+                    <div class="w-100 relative mt4">
                         <h3 class="mb2 mt2">Marketplace overview</h3>
                         <p>This is how you appear to employers and activity log this month</p>
-                    </div>
-                    <div class="w-100">
-                        <article class="w-100 bg-white relative overflow-hidden" style="padding: 20px">
+                        <img class="o-40 hide absolute right-1 b" style="top: 88px" src="images/ic/close.svg">
+                        <div class="w-100 bg-white  overflow-hidden" style="padding: 20px">
                             <img class="drop-click br-pill avatar mt1" style="height: 70px; width: 70px" src="images/jimi.jpg">
-                            <div class="absolute top-1 right-1 b">
-                                <img class="o-40" src="images/ic/close.svg">
-                            </div>
                             <div style="margin-left: 20px" class="dib v-top">
                                 <h3 class="mv0 pt2">James Ciclitira</h3>
                                 <p class="f5 pt0 black-50">Product Designer</p>
@@ -186,9 +184,8 @@ img {
                                     <a class="link">+ 5 Skills</a>
                                 </div>
                             </div>
-                        </article>
-                    </div>
-                    <div class="w-100 mt3">
+                        </div>
+                             <div class="w-100 mt3">
                         <article class="w-third overflow-hidden dib">
                             <div class="bg-white mr2" style="padding: 20px">
                                 <h4 class="ma0 tc mt3">18 people</h4>
@@ -203,6 +200,7 @@ img {
                                 <p class="f5 tc pt0 black-50">Applied for</p>
                         </article>
                         </div>
+                    </div>
                         <div class="mt4">
                             <h3 class="mb2 mt3">Meet the peeps</h3>
                             <p>Interviews with YJ freelancers</p>
@@ -214,7 +212,7 @@ img {
                                     <h4 class="mv0 pt2">David Ellis, Motion Designer</h4>
                                     <p class="mt2 mb3 black-60 lh-copy pr4">I’m a Motion Designer/Nuke Compositor originally from South Yorkshire now working in London as a freelancer. I love a good helli drop on a snowboarding holiday, hitting a metal gig with my bro and traveling crazy places on airbnb with my wife....</p>
                                 </div>
-                                <img class="absolute top-1 right-1 o-40" src="images/ic/close.svg">
+                                <img class="absolute top-1 right-1 o-40 hide" src="images/ic/close.svg">
                             </article>
                             <article class="w-100 bg-white pointer relative mt3 h-120 overflow-hidden">
                                 <img class="dib v-top clipping-2" src="images/interview-2.png">
@@ -222,7 +220,7 @@ img {
                                     <h4 class="mv0 pt2">Philipa Rabbit, Senior Illustrator</h4>
                                     <p class="mt2 mb3 black-60 lh-copy pr4">Heya, I’m Philipa Rabbit! I’m an illustrator, UI and graphic designer from Portugal currently living in London. I’ve graduated in Communication Design at the Faculty of Fine Arts of Lisbon University. I grew up being that kid that was always into sports activities.....</p>
                                 </div>
-                                <img class="absolute top-1 right-1 o-40" src="images/ic/close.svg">
+                                <img class="absolute top-1 right-1 o-40 hide" src="images/ic/close.svg">
                             </article>
                             <article class="w-100 bg-white pointer relative mt3 h-120 overflow-hidden">
                                 <img class="dib v-top w-20 clipping-2" src="images/interview-3.png">
@@ -230,7 +228,7 @@ img {
                                     <h4 class="mv0 pt2">Sandra Dias, Motion Graphics Designer</h4>
                                     <p class="mt2 mb3 black-60 lh-copy pr4">I’m a Motion Designer originally from Lisbon and now I’m working in London as a freelancer. I’m a surf fanatic, I enjoy a good laugh and creative challenges. At the moment, I divide my time between working on motion graphics and editing with client...</p>
                                 </div>
-                                <img class="absolute top-1 right-1 o-40" src="images/ic/close.svg">
+                                <img class="absolute top-1 right-1 o-40 hide" src="images/ic/close.svg">
                             </article>
                         </div>
                         </div>
@@ -255,6 +253,9 @@ img {
             }
         }
     }
+    $('.hide').click(function(e){
+  $(this).parent().addClass('dn');
+});
     </script>
 </body>
 
