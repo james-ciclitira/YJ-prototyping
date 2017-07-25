@@ -6,7 +6,10 @@
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
+
 <style>
 body {
     background-color: #F0F0F0;
@@ -219,7 +222,7 @@ img {
                                     <h4 class="mv0 pt2">David Ellis, Motion Designer</h4>
                                     <p class="mt2 mb3 black-60 lh-copy pr4">I’m a Motion Designer/Nuke Compositor originally from South Yorkshire now working in London as a freelancer. I love a good helli drop on a snowboarding holiday, hitting a metal gig with my bro and traveling crazy places on airbnb with my wife....</p>
                                 </div>
-                                <img class="absolute top-1 right-1 o-40" src="images/ic/close.svg">
+                                <img class="absolute top-1 right-1 o-40 hide" src="images/ic/close.svg">
                             </article>
                             <article class="w-100 bg-white pointer relative mt3 h-120 overflow-hidden">
                                 <img class="dib v-top clipping-2" src="images/interview-2.png">
@@ -227,7 +230,7 @@ img {
                                     <h4 class="mv0 pt2">Philipa Rabbit, Senior Illustrator</h4>
                                     <p class="mt2 mb3 black-60 lh-copy pr4">Heya, I’m Philipa Rabbit! I’m an illustrator, UI and graphic designer from Portugal currently living in London. I’ve graduated in Communication Design at the Faculty of Fine Arts of Lisbon University. I grew up being that kid that was always into sports activities.....</p>
                                 </div>
-                                <img class="absolute top-1 right-1 o-40" src="images/ic/close.svg">
+                                <img class="absolute top-1 right-1 o-40 hide" src="images/ic/close.svg">
                             </article>
                             <article class="w-100 bg-white pointer relative mt3 h-120 overflow-hidden">
                                 <img class="dib v-top w-20 clipping-2" src="images/interview-3.png">
@@ -235,7 +238,7 @@ img {
                                     <h4 class="mv0 pt2">Sandra Dias, Motion Graphics Designer</h4>
                                     <p class="mt2 mb3 black-60 lh-copy pr4">I’m a Motion Designer originally from Lisbon and now I’m working in London as a freelancer. I’m a surf fanatic, I enjoy a good laugh and creative challenges. At the moment, I divide my time between working on motion graphics and editing with client...</p>
                                 </div>
-                                <img class="absolute top-1 right-1 o-40" src="images/ic/close.svg">
+                                <img class="absolute top-1 right-1 o-40 hide" src="images/ic/close.svg">
                             </article>
                         </div>
                         <div class="mt3">
@@ -248,7 +251,7 @@ img {
                                     <h4 class="mt1 pt3">Community ideas & feedback</h4>
                                     <p class="mt2 mb3 black-60 pr4">A community for YunoJuno freelancer powered by slack</p>
                                 </div>
-                                <img class="absolute top-1 right-1 o-40" src="images/ic/close.svg">
+                                <img class="absolute top-1 right-1 o-40 hide" src="images/ic/close.svg">
                             </article>
                             <article class="w-100 bg-white pointer relative overflow-hidden mt3">
                                 <img class="dib v-top clipping-2 " src="images/awards.png">
@@ -256,7 +259,7 @@ img {
                                     <h4 class="mv0 pt2">Freelancing perks - 2017</h4>
                                     <p class="mt2 mb3 black-60 pr4 lh-copy">Check out our special offers for you, from our industry partners and friends, just for being a member of the Yunojuno community. Example included 25% off co-working desk space</p>
                                 </div>
-                                <img class="absolute top-1 right-1 o-40" src="images/ic/close.svg">
+                                <img class="absolute top-1 right-1 o-40 hide" src="images/ic/close.svg">
                             </article>
                             <article class="w-100 bg-white pointer relative  overflow-hidden mt3">
                                 <img class="dib v-top clipping-2 " src="images/slack.svg">
@@ -264,7 +267,7 @@ img {
                                     <h4 class="mv0 pt2">Our community makes us stronger</h4>
                                     <p class="mt2 mb3 black-60 pr4 lh-copy">Join one of the biggest freelancers community forums. Looking for feedback on unfinished work? This is the place! Chat about all things related to freelancing & raise any ideas orsuggestions for the platform.</p>
                                 </div>
-                                <img class="absolute top-1 right-1 o-40" src="images/ic/close.svg">
+                                <img onclick="hide()" class="absolute top-1 right-1 o-40 hide" src="images/ic/close.svg">
                             </article>
                         </div>
                         </div>
@@ -273,6 +276,14 @@ img {
                             <p class="pv2 ph3 ba dib br-pill" style="border-color: rgba(0,0,0,0.12); border-width: 1.5px">Learn more about how YunoJuno work in our <span class="link"> FAQs</span></p>
                         </a>
                         <footer class="w-100 h2"></footer>
+
+
+    <script>
+$('.hide').click(function(e){
+  $(this).parent().addClass('dn');
+});
+
+</script>
 </body>
 
 </html>
