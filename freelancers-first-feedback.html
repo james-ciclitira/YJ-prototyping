@@ -6,10 +6,9 @@
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
-
-
 <style>
 body {
     background-color: #F0F0F0;
@@ -45,10 +44,10 @@ img {
     <header class="w-100 bg-white pv2 ph3 db relative" style="height: 56px">
         <a href="index.html"><img class="pl3 pointer" src="images/logo.svg"></a>
         <div class=" dib v-top mt2 pl3-ns pl0">
-            <a class="no-underline v-mid pl3 mt2 black-70 b" href="freelancers-first-time.html">Activity/tasks/briefs</a>
+            <a class="no-underline v-mid pl3 mt2 black-50" href="freelancers-first-time.html">Activity/tasks/briefs</a>
             <a class="no-underline v-mid pl3 mt2 black-50" href="freelancers-first-time-empty.html">No activity</a>
             <a class="no-underline v-mid pl3 mt2 black-50" href="freelancers-no-box.html">No boxes</a>
-            <a class="no-underline v-mid pl3 mt2 black-50" href="freelancers-first-feedback.html">Feedback</a>
+            <a class="no-underline v-mid pl3 mt2 black-70 b" href="freelancers-first-feedback.html">Feedback</a>
         </div>
         <div class="dib fr pointer">
             <img id="icon" class="drop-click br-pill fr avatar mt1" style="height: 36px; width: 36px" src="images/jimi.jpg">
@@ -77,122 +76,107 @@ img {
         </ul>
         <div class="mw9 screen screen-ns">
             <h1 class="mb2 pl3">Welcome, Jimi</h1>
-            <div class="w-100">
-                <article class="w-third-l w-50-m w-100 pl3-ns pa2 dib">
-                    <div class="bg-white w-100 pa3 min-w7" style="height: 300px">
-                        <div style="height: 108px">
-                            <h2 class="ma0">Briefs</h2>
-                            <p class="mt3">Briefs that you've specifically been shortlisted for and public briefs for all interested freelancers</p>
-                        </div>
-                        <div style="height: 104px">
-                            <h3>Status</h3>
-                            <div>
-                                <p class="bg-blue tc white dib f5 note mr2 fw3 mt0" style="border-radius: 50%">1</p>
-                                <p class="mt0 b dib">Brief shortlisted for</p>
+            <div class="pl3">
+                <h1 class="mb2 mt4">Latest Tasks</h1>
+                <p>You have <a href="#0" class="b link">23 incomplete tasks.</a></p>
+                <div class="w-100 bg-white">
+                    <article class="w-100 pv2 pointer">
+                        <div class="clipping bg-red ba br-pill dib v-top ml4 mt3 relative">
+                        <i class="fa fa-exclamation-triangle absolute pt3 white" style="font-size: 22px; padding-left: 14px; padding-top: 14px" aria-hidden="true"></i></div>
+                        <div class="dib ml4 mt3 v-top">
+                            <h4 class="dib mv0">Please complete your timesheet for </h4>
+                            <div><a class="dib link mt2" href="#0">Hugo & cat</a><p class="dib black-50">- 4/07/2017</p></div>
+                        </div> <img class="dib mt4 mr4 fr h1" src="images/ic/arrow.svg"><hr class="ma0" style="margin-left: 124px">
+                    </article><article class="w-100 pv2 pointer">
+                        <div class="clipping bg-red ba br-pill dib v-top ml4 mt3 relative">
+                        <i class="fa fa-exclamation-triangle absolute pt3 white" style="font-size: 22px; padding-left: 14px; padding-top: 14px" aria-hidden="true"></i></div>
+                        <div class="dib ml4 mt3 v-top">
+                            <h4 class="dib mv0">Please complete your timesheet for </h4>
+                            <div><a class="dib link mt2" href="#0">Hugo & cat</a><p class="dib black-50">- 4/07/2017</p>
                             </div>
-                            <p class="bg-blue tc white dib f5 note mr2 fw3 mt0" style="border-radius: 50%">3</p>
-                            <p class="mt0 b dib">Public briefs</p>
-                        </div>
-                        <hr>
-                        <div class="fr"><a class="link v-mid" href="">All Briefs</a></div>
-                    </div>
-                </article><article class="w-third-l w-50-m w-100 pa2 v-top dib">
-                    <div class="bg-white w-100 pa3 min-w7" style="height: 300px">
-                        <div style="height: 108px">
-                            <h2 class="ma0">Things you need to do</h2>
-                            <p class="mt3">Are you on top of your YJ tasks and messages?</p>
-                        </div>
-                        <div style="height: 104px">
-                            <h3>Status</h3>
-                            <p>You're all up-to-date. Nothing to see here.</p>
-                        </div>
-                        <hr>
-                        <div class="fr"><a class="link v-mid" href="">View Tasks</a></div>
-                    </div>
-                </article><article class="w-third-l w-50-m w-100 v-top pr0 pl2-ns pa2 dib">
-                    <div class="bg-white w-100 pa3 min-w7" style="height: 300px">
-                        <div style="height: 108px">
-                            <h2 class="ma0 v-top"><img src="images/logo.svg"> direct</h2>
-                            <p class="mt3">Use YunoJuno to manage all your bookings and benefit from HSBC's protection on your invoices and guaranteed payment in 14 days. For free!</p>
-                        </div>
-                        <div class="w-100" style="height: 120px"></div>
-                        <hr>
-                        <div class="fr"><a class="link v-mid" href="">YJ Direct</a></div>
-                    </div>
-                </article>
-                <div class="pl3">
-                    <h1 class="mb2 mt4">Briefs shortlisted for</h1>
-                    <p>Only available to shortlisted freelancers</p>
-                    <div class="w-100 bg-white">
-                        <article class="w-100 pv2 pointer">
-                            <img class="clipping ba br-pill dib v-top ml4 mt3" src="images/employers/cat.png">
-                            <div class="dib ml4 mt3 v-top">
-                                <h4 class="dib mv0">Senior app Designer </h4><span class="pl2 v-mid">17 Jul 2017  • 4 months</span>
-                                <a class="db link mt2" href="https://twitter.com">Hugo & cat</a>
-                                <p class="mt2 mb3 black-60">We’re on the lookout for a brilliant Senior Designer at Hugo & ...</p>
-                            </div> <img class="dib mt4 mr4 fr h1" src="images/ic/arrow.svg">
-                        </article>
-                    </div>
-                    <h1 class="mb2 mt4">Public briefs</h1>
-                    <p>Available to any interested freelancers</p>
-                    <div class="w-100 bg-white">
-                        <article class="w-100 pv2 pointer">
-                            <img class="clipping ba br-pill dib v-top ml4 mt3" src="images/employers/cat.png">
-                            <div class="dib ml4 mt3 v-top">
-                                <h4 class="dib mv0">Senior app Designer </h4><span class="pl2 v-mid">17 Jul 2017  • 4 months</span>
-                                <a class="db link mt2" href="https://twitter.com">Hugo & cat</a>
-                                <p class="mt2 mb3 black-60">We’re on the lookout for a brilliant Senior Designer at Hugo & ...</p>
-                            </div> <img class="dib mt4 mr4 fr h1" src="images/ic/arrow.svg">
-                            <hr class="ma0" style="margin-left: 128px">
-                        </article>
-                        <article class="w-100 pv2 pointer">
-                            <img class="clipping ba br-pill dib v-top ml4 mt3" src="images/employers/uplabs.png">
-                            <div class="dib ml4 mt3 v-top">
-                                <h4 class="dib mv0">UI/UX Designer </h4><span class="pl2 v-mid">22 Jul 2017  • 2 months</span>
-                                <a class="db link mt2" href="https://twitter.com">Uplabs</a>
-                                <p class="mt2 mb3 black-60">We’re on the lookout for a brilliant Senior Designer at Hugo & ...</p>
-                            </div> <img class="dib mt4 mr4 fr h1" src="images/ic/arrow.svg">
-                            <hr class="ma0" style="margin-left: 128px">
-                        </article>
-                        <article class="w-100 pv2 pointer">
-                            <img class="clipping ba br-pill dib v-top ml4 mt3" src="images/employers/ramotion.png">
-                            <div class="dib ml4 mt3 v-top">
-                                <h4 class="dib mv0">Web Designer </h4><span class="pl2 v-mid">24 Jun 2017  • 2 weeks</span>
-                                <a class="db link mt2" href="https://twitter.com">Hugo & cat</a>
-                                <p class="mt2 mb3 black-60">We’re on the lookout for a brilliant Senior Designer at Hugo & ...</p>
-                            </div><img class="dib mt4 mr4 fr h1" src="images/ic/arrow.svg">
-                        </article>
-                    </div>
-                        <div class="w-100 relative mt4">
-                        <h1 class="mb2 mt2">Marketplace overview</h1>
-                        <p>Your appearance to employers and activity log this month</p>
-                        <img class="o-40 hide absolute right-1 b" style="top: 102px" src="images/ic/close.svg">
-                        <div class="w-100 bg-white  overflow-hidden" style="padding: 20px">
-                            <img class="drop-click br-pill avatar mt1" style="height: 70px; width: 70px" src="images/jimi.jpg">
-                            <div style="margin-left: 20px" class="dib v-top">
-                                <h3 class="mv0 pt2">James Ciclitira</h3>
-                                <p class="f5 pt0 black-50">Product Designer</p>
-                                <img class="pointer" src="images/ic/social/linkedin.svg">
-                                <img class="pl2 pointer" src="images/ic/social/twitter.svg">
-                                <img class="pl2 pointer" src="images/ic/social/link.svg">
-                                <div class="mt3" id="work">
-                                    <a class="br-pill skill">CrowdScores</a>
-                                    <a class="br-pill skill">Numilli</a>
-                                    <a class="br-pill skill">Suggestv</a>
-                                    <a class="br-pill skill">PassApp</a>
-                                    <a class="br-pill skill">YunoJuno</a>
-                                </div>
-                                <div class="mt3 mb2" id="skill">
-                                    <a class="br-pill skill">Sketching</a>
-                                    <a class="br-pill skill">UI/UX Design</a>
-                                    <a class="br-pill skill">Interaction Design</a>
-                                    <a class="br-pill skill">Prototyping</a>
-                                    <a class="br-pill skill">Design Research</a>
-                                    <a class="link">+ 5 Skills</a>
-                                </div>
+                        </div> <img class="dib mt4 mr4 fr h1" src="images/ic/arrow.svg"><hr class="ma0" style="margin-left: 124px">
+
+                    </article><article class="w-100 pv2 pointer">
+                        <div class="clipping bg-red ba br-pill dib v-top ml4 mt3 relative">
+                        <i class="fa fa-exclamation-triangle absolute pt3 white" style="font-size: 22px; padding-left: 14px; padding-top: 14px" aria-hidden="true"></i></div>
+                        <div class="dib ml4 mt3 v-top">
+                            <h4 class="dib mv0">Please complete your timesheet for </h4>
+                            <div><a class="dib link mt2" href="#0">Hugo & cat</a><p class="dib black-50">- 4/07/2017</p></div>
+                        </div><img class="dib mt4 mr4 fr h1" src="images/ic/arrow.svg">
+                    </article>
+                </div>
+                <h1 class="mb2 mt4">Briefs shortlisted for</h1>
+                <p>Only available to shortlisted freelancers</p>
+                <div class="w-100 bg-white">
+                    <article class="w-100 pv2 pointer">
+                        <img class="clipping ba br-pill dib v-top ml4 mt3" src="images/employers/cat.png">
+                        <div class="dib ml4 mt3 v-top">
+                            <h4 class="dib mv0">Senior app Designer </h4><span class="pl2 v-mid">17 Jul 2017  • 4 months</span>
+                            <a class="db link mt2" href="https://twitter.com">Hugo & cat</a>
+                            <p class="mt2 mb3 black-60">We’re on the lookout for a brilliant Senior Designer at Hugo & ...</p>
+                        </div> <img class="dib mt4 mr4 fr h1" src="images/ic/arrow.svg">
+                    </article>
+                </div>
+                <h1 class="mb2 mt4">Public briefs</h1>
+                <p>Available to any interested freelancers</p>
+                <div class="w-100 bg-white">
+                    <article class="w-100 pv2 pointer">
+                        <img class="clipping ba br-pill dib v-top ml4 mt3" src="images/employers/cat.png">
+                        <div class="dib ml4 mt3 v-top">
+                            <h4 class="dib mv0">Senior app Designer </h4><span class="pl2 v-mid">17 Jul 2017  • 4 months</span>
+                            <a class="db link mt2" href="https://twitter.com">Hugo & cat</a>
+                            <p class="mt2 mb3 black-60">We’re on the lookout for a brilliant Senior Designer at Hugo & ...</p>
+                        </div> <img class="dib mt4 mr4 fr h1" src="images/ic/arrow.svg">
+                        <hr class="ma0" style="margin-left: 128px">
+                    </article>
+                    <article class="w-100 pv2 pointer">
+                        <img class="clipping ba br-pill dib v-top ml4 mt3" src="images/employers/uplabs.png">
+                        <div class="dib ml4 mt3 v-top">
+                            <h4 class="dib mv0">UI/UX Designer </h4><span class="pl2 v-mid">22 Jul 2017  • 2 months</span>
+                            <a class="db link mt2" href="https://twitter.com">Uplabs</a>
+                            <p class="mt2 mb3 black-60">We’re on the lookout for a brilliant Senior Designer at Hugo & ...</p>
+                        </div> <img class="dib mt4 mr4 fr h1" src="images/ic/arrow.svg">
+                        <hr class="ma0" style="margin-left: 128px">
+                    </article>
+                    <article class="w-100 pv2 pointer">
+                        <img class="clipping ba br-pill dib v-top ml4 mt3" src="images/employers/ramotion.png">
+                        <div class="dib ml4 mt3 v-top">
+                            <h4 class="dib mv0">Web Designer </h4><span class="pl2 v-mid">24 Jun 2017  • 2 weeks</span>
+                            <a class="db link mt2" href="https://twitter.com">Hugo & cat</a>
+                            <p class="mt2 mb3 black-60">We’re on the lookout for a brilliant Senior Designer at Hugo & ...</p>
+                        </div><img class="dib mt4 mr4 fr h1" src="images/ic/arrow.svg">
+                    </article>
+                </div>
+                <div class="w-100 relative mt4">
+                    <h1 class="mb2 mt2">Marketplace overview</h1>
+                    <p>Your appearance to employers and activity log this month</p>
+                    <img class="o-40 hide absolute right-1 b" style="top: 102px" src="images/ic/close.svg">
+                    <div class="w-100 bg-white  overflow-hidden" style="padding: 20px">
+                        <img class="drop-click br-pill avatar mt1" style="height: 70px; width: 70px" src="images/jimi.jpg">
+                        <div style="margin-left: 20px" class="dib v-top">
+                            <h3 class="mv0 pt2">James Ciclitira</h3>
+                            <p class="f5 pt0 black-50">Product Designer</p>
+                            <img class="pointer" src="images/ic/social/linkedin.svg">
+                            <img class="pl2 pointer" src="images/ic/social/twitter.svg">
+                            <img class="pl2 pointer" src="images/ic/social/link.svg">
+                            <div class="mt3" id="work">
+                                <a class="br-pill skill">CrowdScores</a>
+                                <a class="br-pill skill">Numilli</a>
+                                <a class="br-pill skill">Suggestv</a>
+                                <a class="br-pill skill">PassApp</a>
+                                <a class="br-pill skill">YunoJuno</a>
+                            </div>
+                            <div class="mt3 mb2" id="skill">
+                                <a class="br-pill skill">Sketching</a>
+                                <a class="br-pill skill">UI/UX Design</a>
+                                <a class="br-pill skill">Interaction Design</a>
+                                <a class="br-pill skill">Prototyping</a>
+                                <a class="br-pill skill">Design Research</a>
+                                <a class="link">+ 5 Skills</a>
                             </div>
                         </div>
-                             <div class="w-100 mt3">
+                    </div>
+                    <div class="w-100 mt3">
                         <article class="w-third overflow-hidden dib">
                             <div class="bg-white mr2" style="padding: 20px">
                                 <h4 class="ma0 tc mt2">18 people</h4>
@@ -220,8 +204,7 @@ img {
                                 <p class="f5 tc pt0 black-50 lh-copy">You applied for <br>8 public briefs</p>
                         </article>
                         </div> -->
-                    </div>
-
+                        </div>
                         <div class="mt4">
                             <h1 class="mb2 mt3">Meet the peeps</h1>
                             <p>Interviews with YJ freelancers</p>
@@ -281,18 +264,28 @@ img {
                                 <img class="absolute top-1 right-1 o-40 hide" src="images/ic/close.svg">
                             </article>
                         </div>
-                        </div>
-                        </div>
-                        <a target="blank" href="https://yunojuno.zendesk.com/hc/en-us/sections/200971879-Freelancer-FAQs" class="mt4 tc db center">
-                            <p class="pv2 ph3 ba dib br-pill" style="border-color: rgba(0,0,0,0.12); border-width: 1.5px">Learn more about how YunoJuno work in our <span class="link"> FAQs</span></p>
-                        </a>
-                        <footer class="w-100 h2"></footer>
-    <script>
-$('.hide').click(function(e){
-  $(this).parent().addClass('dn');
-});
+                        <div class="relative">
+                        <img class="w-100 mt4 " src="images/footer.svg">
+                        <div class="absolute w-100 top-1 db center white">
+                        <h3 class="w-50 tc center mt5 pt3 lh-copy">Use YunoJuno to manage all your bookings and benefit from HSBC's protection & guaranteed payment in 14 days. For free!</h3>
+                        <button class="br-pill pointer pa-button db center bg-accent mt4 b" style="width: 186px" href="#0">Learn more</button>
 
-</script>
+                        </div>
+                        </div>
+                        </div>
+                                            <a target="blank" href="https://yunojuno.zendesk.com/hc/en-us/sections/200971879-Freelancer-FAQs" class="mt4 tc db center">
+                        <p class="pv2 ph3 ba dib br-pill" style="border-color: rgba(0,0,0,0.12); border-width: 1.5px">Learn more about how YunoJuno work in our <span class="link"> FAQs</span></p>
+                    </a>
+
+                    </div>
+
+
+                    <footer class="w-100 h2"></footer>
+                    <script>
+                    $('.hide').click(function(e) {
+                        $(this).parent().addClass('dn');
+                    });
+                    </script>
 </body>
 
 </html>
