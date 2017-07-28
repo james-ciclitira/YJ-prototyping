@@ -26,29 +26,58 @@ body {
     background-color: #F0F0F0;
     height: 2000px
 }
+
+li {
+    cursor: pointer;
+}
+
+li:hover {
+
+    border-left-width: 3px;
+    border-left-style: solid;
+    border-left-color: #DEDEDE;
+}
 </style>
 
 <body>
-    <header class="w-100 bg-white pv2 ph3 db relative" style="height: 56px">
-        <img class="pl3 pointer" src="images/logo.svg">
-        <div class="dib fr pointer">
-            <img id="icon" class="drop-click fr" src="images/icon.png">
-            <div class="dib fr pr3 tr pt1">
-                <p class="ma0">Hola,<span class="pl2">jimi</span></p>
-                <p class="ma0 pt1 mb2 drop-click" style="font-size: 13px; color: rgba(0,0,0, 0.50); letter-spacing:0.5px">Available</p>
+    <header class="bg-white flex-ns justify-between-ns w-100" style="height: 56px">
+        <div class="flex items-center w-100">
+            <img class="pl3 pointer db-ns dn" src="images/logo.svg">
+            <div class="pa2 h3 flex items-center justify-center dn-ns">
+                <img onclick="OpenDraw()" class="pl2" src="images/ic/menu-open.svg">
             </div>
         </div>
+        <div class="dib-ns dn fr pr3 tr pt2">
+            <p class="ma0">Hola,<span class="pl2">jimi</span></p>
+            <p class="ma0 pt1 mb2 drop-click" style="font-size: 13px; color: rgba(0,0,0, 0.50); letter-spacing:0.5px">Available</p>
+        </div>
+        <img class="fr br-pill mr3 mt2 db-ns dn" style="height: 40px" src="images/jimi.jpg">
+        <div class="flex-ns items-center-ns">
+            <ul class="list ma0 pr2-ns pa0 black-60 dn bg-white">
+                <li class="pa3 pa2-ns bt b--white-20 b--none-ns">Dashboard</li>
+                <li class="pa3 pa2-ns bt b--white-20 b--none-ns">Conversation</li>
+                <li class="pa3 pa2-ns bt b--white-20 b--none-ns">Briefs</li>
+                <li class="pa3 pa2-ns bt b--white-20 b--none-ns">Bookings</li>
+                <li class="pa3 pa2-ns bt b--white-20 b--none-ns">Timesheet</li>
+                <li class="pa3 pa2-ns bt b--white-20 b--none-ns">Invoices</li>
+                <li class="pa3 pa2-ns bt b--white-20 b--none-ns">Tasks</li>
+                <li class="pa3 pa2-ns bt b--white-20 b--none-ns">Briefs</li>
+                <button class="br-pill pointer pa-button mb2 bg-accent mt2 b" style="width: 186px" href="#0">Find a freelancer</button>
+            </ul>
+        </div>
     </header>
-    <ul class="fl pa0 pointer pl2 dib-ns dn indicator">
-        <a href="#0" class="nav bg-white tabactive b">Dashboard</a>
-        <a href="#0" class="nav bg-white">Conversation</a>
-        <a href="#0" class="nav bg-white">Briefs</a>
-        <a href="#0" class="nav bg-white">Bookings</a>
-        <a href="#0" class="nav bg-white">Timesheet</a>
-        <a href="#0" class="nav bg-white">Invoices</a>
-        <a href="#0" class="nav bg-white">Tasks</a>
+
+    <ul class="fl pa0 pl2 dib-ns dn indicator">
+        <li href="#" class="nav bg-white tabactive b">Dashboard</li>
+        <li href="#" class="nav bg-white">Conversation</li>
+        <li href="#" class="nav bg-white">Briefs</li>
+        <li href="#" class="nav bg-white">Bookings</li>
+        <li href="#" class="nav bg-white">Timesheet</li>
+        <li href="#" class="nav bg-white">Invoices</li>
+        <li href="#" class="nav bg-white">Tasks</li>
         <button class="br-pill pointer pa-button mb2 bg-accent mt2 b" style="width: 186px" href="#0">Find a freelancer</button>
     </ul>
+
     <div style="margin-left: 190px">
         <div style="margin-left: 40px">
             <h1 class="ml3">Projects</h1>
@@ -83,7 +112,7 @@ body {
                         <h3 class="dib pt2 ma0">Brief Flow Navigation</h3>
                         <p class="mt2 mb3 black-60">Flow Navigation could be used to break down this form and edit views into manageable chunks</p>
                     </div><img class="dib mt4 mr4 fr h1" src="images/ic/arrow.svg"></a>
-                     <a href="0#" class="db w-100 mv2 pv3 bg-white mr4">
+                <a href="0#" class="db w-100 mv2 pv3 bg-white mr4">
                     <div class="bg-black-50 br-pill dib ml4 relative icon"> <i class="fa tc mt3 white w-100 fa-question grow f56"></i></div>
                     <div class="dib ml4 v-top">
                         <h3 class="dib pt2 ma0">Project title</h3>
