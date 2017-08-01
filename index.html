@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <style>
 .f56 {
@@ -50,8 +51,8 @@ li:hover {
     }
 
     .f56 {
-    font-size: 40px
-}
+        font-size: 40px
+    }
 }
 </style>
 
@@ -133,6 +134,17 @@ li:hover {
                 </div><img class="dib mt4 mr4 fr h1" src="images/ic/arrow.svg"></a>
         </div>
     </div>
+
+     <script>
+  $(document).ready(function() {
+    $("#meun").click(function() {
+      $("#hidden").removeClass("dn");
+      $("#hide").addClass("dn");
+    });
+  });
+
+  </script>
+ 
 </body>
 
 </html>
