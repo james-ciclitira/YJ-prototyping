@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Empty-states</title>
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<style>
+body {
+    background-color: #F0F0F0;
+}
+
+.clipping-2 {
+    width: 234px
+}
+
+img alt='icon' {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.h-120 {
+    max-height: 140px;
+    min-height: 120px
+}
+
+.skill {
+    border: solid 1px rgb(222, 222, 222);
+    font-size: 13px;
+    color: rgb(136, 136, 136);
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-right: 8px
+}
+
+.hr {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.p20 {
+    padding: 20px
+}
+
+.f18 {
+    font-size: 18px
+}
+
+hr {
+    margin-right: 20px;
+    margin-left: 20px;
+    height: 2px;
+    background-color: rgb(242, 242, 242);
+}
+</style>
+
+<body>
+    <header class="w-100 bg-white pv2 ph3 db relative" style="height: 56px">
+        <a href="https://jciclitira.com/yj/"><img alt='icon' class="pl3 pointer" src="images/logo.svg"></a>
+        <div class="dib v-top mt2 pl3-ns pl0">
+            <a class="no-underline v-mid pl3 mt2 black-50" href="https://jciclitira.com/yj/yj-direct">Dashboard-full</a>
+            <a class="no-underline v-mid pl3 mt2 black-70 b" href="https://jciclitira.com/yj/yj-direct-empty">Dashboard-empty</a>
+        </div>
+        <div class="dib fr pointer">
+            <img alt='icon' id="icon" class="drop-click br-pill fr avatar mt1" style="height: 36px; width: 36px" src="images/jimi.jpg">
+            <div class="dib fr pr3 tr pt2 mt1">
+                <p class="ma0 pt1">Hola,<span class="pl2">Jimi</span></p>
+            </div>
+        </div>
+    </header>
+    <div class="w-100 overflow-hidden">
+        <ul class="fl dib-ns dn pa0 pl2 indicator">
+            <a href="https://jciclitira.com/yj/freelancers-dashboard" class="nav bg-white tabactive b">Dashboard</a>
+            <a href="https://jciclitira.com/yj/freelancers-conversation" class="nav bg-white">Conversation</a>
+            <a href="https://jciclitira.com/yj/freelancers-briefs" class="nav bg-white">Briefs</a>
+            <a href="https://jciclitira.com/yj/freelancers-bookings" class="nav bg-white">Contracts</a>
+            <a href="https://jciclitira.com/yj/freelancers-timesheet" class="nav bg-white">Timesheet</a>
+            <a href="https://jciclitira.com/yj/freelancers-invoices" class="nav bg-white">Invoices</a>
+            <a href="https://jciclitira.com/yj/freelancers-invoices" class="nav bg-white">YJ Direct</a>
+            <a href="https://jciclitira.com/yj/freelancers-tasks" class="nav bg-white">Tasks</a>
+            <div class="pl3 mt3">
+                <a><img alt='icon' src="images/ic/social/email.svg"></a>
+                <a><img alt='icon' class="pl3" src="images/ic/social/linkedin.svg"></a>
+                <a><img alt='icon' class="dib pl3" src="images/ic/social/twitter.svg"></a>
+                <p class="hint">Terms & Conditions</p>
+                <p class="hint">Privacy</p>
+            </div>
+        </ul>
+        <div class="mw9 screen screen-ns">
+            <div class="pl3 pt3">
+                <article class="dt w-100 bg-white" style="height: 500px">
+                    <div class="dtc v-mid tc ph3 ph4-l">
+                        <img src="images/ic/empty.svg">
+                        <h3 class="tc o-40">Dashboard - empty state</h3>
+                        <h4 class="tc o-40">You don't have any available briefs right now. Check back later</h4>
+                    </div>
+                </article>
+                <div class="relative">
+                    <img alt='icon' class="w-100 mt4 " src="images/foooter.svg">
+                    <div class="absolute w-100 top-1 db center">
+                        <h3 class="w-60 tc center mt4 pt3 lh-copy">Use YunoJuno to manage all your bookings and benefit from HSBC's protection & guaranteed payment in 14 days. For free!</h3>
+
+
+
+                        <button class="br-pill pointer pa-button db center bg-accent mt3 b" style="width: 186px">Learn more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="w-100 h2"></footer>
+</body>
+
+</html>
