@@ -44,6 +44,7 @@ button {
 footer {
   height: 30px;
   width: 100%;
+  display: block;
 }
 
 .bold {
