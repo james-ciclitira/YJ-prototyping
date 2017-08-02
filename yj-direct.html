@@ -63,10 +63,26 @@ img alt='icon' {
     width: 40px;
 }
 
+.draw {
+       display: none;
+    }
 
-@media screen and (min-width: 30em) {
+.draw-ns {
+    margin-left: 0px
+}
+
+.p-text {
+        padding-left: 15px
+    }
+
+
+@media screen and (min-width: 68em) {
     .draw-ns {
         margin-left: 210px
+    }
+
+    .draw {
+       display: block;
     }
 
     .icon {
@@ -94,6 +110,10 @@ img alt='icon' {
         margin-left: 20px;
         margin-right: 20px;
     }
+
+    .p-text {
+        padding-left: 0px
+    }
 }
 
 
@@ -119,7 +139,7 @@ hr {
         </div>
     </header>
     <div class="w-100 overflow-hidden">
-        <ul class="fl dib-ns dn pa0 pl2 indicator">
+        <ul class="fl draw pa0 pl2 indicator">
             <a href="https://jciclitira.com/yj/yj-direct" class="nav bg-white tabactive b">Dashboard</a>
             <a href="https://jciclitira.com/yj/conversation" class="nav bg-white">Conversation</a>
             <a href="https://jciclitira.com/yj/briefs" class="nav bg-white">Briefs</a>
@@ -138,8 +158,8 @@ hr {
         </ul>
         <div class="screen">
             <div class="draw-ns mw9">
-                <h1 class="ma0 pl0-ns pl2" style="margin-bottom: 15px; margin-top: 15px">Dashboard</h1>
-                <h3 class="ma0 pl0-ns pl2" style="margin-bottom: 15px">Latest tasks</h3>
+                <h1 class="ma0 p-text" style="margin-bottom: 15px; margin-top: 15px">Dashboard</h1>
+                <h3 class="ma0 p-text" style="margin-bottom: 15px">Latest tasks</h3>
                 <div class="w-100 bg-white">
                     <article class="w-100 p20 pointer relative">
                         <h3 class="dib mv0">Please complete your timesheet for <a class="dib link f18" href="#0">Hugo & cat</a></h3>
@@ -159,8 +179,8 @@ hr {
                         <img alt='icon' class="absolute v-mid top-2 right-1 pt2 h1 pr1 db-ns dn" src="images/ic/arrow.svg">
                     </article>
                 </div>
-                <h3 class="mb0 pl0-ns pl2" style="margin-top: 30px">Interested in you</h3>
-                <p class="pl0-ns pl2" style="margin-top: 5px">These employers have expressed an interest in working with you.</p>
+                <h3 class="mb0 p-text" style="margin-top: 30px">Interested in you</h3>
+                <p class="p-text" style="margin-top: 5px">These employers have expressed an interest in working with you.</p>
                 <div class="w-100 bg-white">
                     <article class="w-100 pv2-ns pv3 pointer relative">
                         <img alt='icon' class="clipping ba br-pill dib v-top ml4-ns ml2 mt3-ns mt2" src="images/employers/uxpin.jpg">
@@ -174,8 +194,8 @@ hr {
                         <img alt='icon' class="absolute v-mid top-2 right-1 pt3 h1 pr1 db-ns dn" src="images/ic/arrow.svg">
                     </article>
                 </div>
-                <h3 class="mb0 pl0-ns pl2" style="margin-top: 30px">Public briefs</h3>
-                <p class="pl0-ns pl2" style="margin-top: 5px; margin-bottom: 15px">Available to any interested freelancers</p>
+                <h3 class="mb0 p-text" style="margin-top: 30px">Public briefs</h3>
+                <p class="p-text" style="margin-top: 5px; margin-bottom: 15px">Available to any interested freelancers</p>
                 <div class="w-100 bg-white">
                     <article class="w-100 pv2-ns pv3 pointer relative">
                         <img alt='icon' class="absolute v-mid top-2 right-1 pt3 h1 pr1 db-ns dn" src="images/ic/arrow.svg">
@@ -212,7 +232,7 @@ hr {
                         </div>
                     </article>
                 </div>
-                <h3 class="mb0 pl0-ns pl2" style="margin-top: 30px; margin-bottom: 15px">YJ Direct</h3>
+                <h3 class="mb0 p-text" style="margin-top: 30px; margin-bottom: 15px">YJ Direct</h3>
                 <div class="w-100 bg-white relative">
                     <article class="w-100 pv2-ns pv3 pointer relative">
                         <img alt='icon' class="absolute v-mid top-2 right-1 pt3 h1 pr1 db-ns dn" src="images/ic/arrow.svg">
