@@ -42,12 +42,53 @@ button {
 }
 
 footer {
-  height: 30px;
-  width: 100%;
-  display: block;
+    height: 30px;
+    width: 100%;
+    display: block;
 }
 
-.bold {
+li {
+    cursor: pointer;
+}
+
+li:hover {
+
+    border-left-width: 3px;
+    border-left-style: solid;
+    border-left-color: #DEDEDE;
+}
+
+
+.f56 {
+    font-size: 20px
+}
+
+.icon {
+    height: 40px;
+    width: 40px
+}
+
+.h5 {
+    height: 180px
+}
+
+
+@media screen and (min-width: 30em) {
+    .draw-ns {
+        margin-left: 230px
+    }
+
+    .icon {
+        height: 70px;
+        width: 70px
+    }
+
+    .f56 {
+        font-size: 40px
+    }
+}
+
+</style>.bold {
     font-family: 'Brother-1816-Bold', sans-serif;
 }
 
