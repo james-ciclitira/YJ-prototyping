@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="3px" height="12px" viewBox="0 0 3 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>ic/more</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Mockup" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.6">
+        <g id="tasks" transform="translate(-979.000000, -18.000000)">
+            <g id="ic/more" transform="translate(971.000000, 15.000000)">
+                <g id="Group">
+                    <polygon id="Shape" points="0 0 18 0 18 18 0 18"></polygon>
+                    <path d="M9.5,6 C10.325,6 11,5.325 11,4.5 C11,3.675 10.325,3 9.5,3 C8.675,3 8,3.675 8,4.5 C8,5.325 8.675,6 9.5,6 Z M9.5,8 C8.675,8 8,8.675 8,9.5 C8,10.325 8.675,11 9.5,11 C10.325,11 11,10.325 11,9.5 C11,8.675 10.325,8 9.5,8 Z M9.5,12 C8.675,12 8,12.675 8,13.5 C8,14.325 8.675,15 9.5,15 C10.325,15 11,14.325 11,13.5 C11,12.675 10.325,12 9.5,12 Z" id="Shape" fill="#000000"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
