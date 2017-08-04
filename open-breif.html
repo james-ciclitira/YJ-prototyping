@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-<!-- ffff -->
 
 <head>
     <title>Empty-states</title>
@@ -125,13 +124,18 @@ img alt='icon' {
 
 hr {
 
-    height: 2px;
+    height: 1px;
     background-color: rgb(242, 242, 242);
 }
 
 
-.hidden { display:none; }
-.parent:hover .hidden { display:block; }
+.hidden {
+    display: none;
+}
+
+.parent:hover .hidden {
+    display: block;
+}
 </style>
 
 <body>
@@ -167,73 +171,75 @@ hr {
             <div class="draw-ns mw9">
                 <h1 class="ma0 p-text" style="margin-bottom: 15px; margin-top: 15px">Dashboard</h1>
                 <h3 class="ma0 p-text" style="margin-bottom: 15px">Open briefs</h3>
-                <div class="w-100 bg-white">
-                    <article class="dt w-100 mt2 p20 relative pointer parent" href="#0">
-                        <img onclick="MoreOptions()" alt='icon' class="drop-click absolute hidden o-70 v-mid top-0 right-0 pt3 pr3 pr1 db-ns dn pointer" src="images/ic/more.svg">
-                        <div class="dtc v-mid">
-                            <h3 class="lh-title black mv0">Freelance PR Account Manager</h3>
-                            <p class="mt2 mb1">PR · £150/day · starting 1 Aug 2017</p>
-                        </div>
-                        <div class="dtc v-mid">
-                            <form class="w-100 tr pr4">
-                                <button class="f6 button-reset bg-white dim pointer pv1 mh2">(8)
-                                    <br>Available</button>
-                                <button class="f6 button-reset bg-white dim pointer pv1 mh2">(8)
-                                    <br>Pending</button>
-                                <button class="f6 button-reset bg-white dim pointer pv1 mh2">(8)
-                                    <br>Unavailable</button>
-                                <button class="f6 button-reset bg-white dim pointer pv1 mh2">(8)
-                                    <br>Applied </button>
-                            </form>
-                        </div>
-                        <div id="more" style="z-index: 22" class="absolute right-0 dn top-0">
-                            <ul class="list pl0 center bg-white w4 shadow-1">
-                                <li class="lh-copy pv2 pl3 ba bl-0 bt-0 br-0 b--black-10">Edit brief</li>
-                                <li class="lh-copy pv2 pl3 ba bl-0 bt-0 br-0 b--black-10">Clone brief</li>
-                                <li class="lh-copy pv2 pl3 br-0 ">Close brief</li>
-                            </ul>
-                        </div>
-                    </article>
-                    <hr>
-                    <article class="dt w-100 mt2 p20 relative pointer parent" href="#0">
-                        <img onclick="MoreOptions()" alt='icon' class="drop-click absolute hidden o-70 v-mid top-0 right-0 pt3 pr3 pr1 db-ns dn pointer" src="images/ic/more.svg">
-                        <div class="dtc v-mid">
-                            <h3 class="lh-title black mv0">Interface designer - for mobile app development</h3>
-                            <p class="mt2 mb1">Designer · £250/day · starting 13 Aug 2017</p>
-                        </div>
-                        <div class="dtc v-mid">
-                            <form class="w-100 tr pr4">
-                                <button class="f6 button-reset bg-white dim pointer pv1 mh2">(8)
-                                    <br>Available</button>
-                                <button class="f6 button-reset bg-white dim pointer pv1 mh2">(8)
-                                    <br>Pending</button>
-                                <button class="f6 button-reset bg-white dim pointer pv1 mh2">(8)
-                                    <br>Unavailable</button>
-                                <button class="f6 button-reset bg-white dim pointer pv1 mh2">(8)
-                                    <br>Applied </button>
-                            </form>
-                        </div>
-                    </article>
-                    <hr>
-                    <article class="dt w-100 mt2 p20 relative pointer parent" href="#0">
-                        <img onclick="MoreOptions()" alt='icon' class="drop-click absolute hidden o-70 v-mid top-0 right-0 pt3 pr3 pr1 db-ns dn pointer" src="images/ic/more.svg">
-                        <div class="dtc v-mid">
-                            <h3 class="lh-title black mv0">Front-end web developer with a extra e long title..</h3>
-                            <p class="mt2 mb1">Developer · £150/day · starting 1 Aug 2017</p>
-                        </div>
-                        <div class="dtc v-mid">
-                            <form class="w-100 tr pr4">
-                                <button class="f6 button-reset bg-white dim pointer pv1 mh2">(8)
-                                    <br>Available</button>
-                                <button class="f6 button-reset bg-white dim pointer pv1 mh2">(8)
-                                    <br>Pending</button>
-                                <button class="f6 button-reset bg-white dim pointer pv1 mh2">(8)
-                                    <br>Unavailable</button>
-                                <button class="f6 button-reset bg-white dim pointer pv1 mh2">(8)
-                                    <br>Applied </button>
-                            </form>
-                        </div>
-                    </article>
+                <div class="w-100">
+                    <div class='bg-white overflow-auto'>
+                        <article class="dt-ns w-100 mt2 p20 bg-white relative pointer parent overflow-auto" href="#0">
+                            <img onclick="MoreOptions()" alt='icon' class="drop-click absolute hidden o-70 v-mid top-0 right-0 pt3 pr3 pr1 db-ns dn pointer" src="images/ic/more.svg">
+                            <div class="dtc-ns v-mid">
+                                <h3 class="lh-title black mv0">Freelance PR Account Manager</h3>
+                                <p class="mt2 mb1">PR · £150/day · starting 1 Aug 2017</p>
+                            </div>
+                            <div class="dtc-ns v-mid fl fr-ns">
+                                <form class="w-100 tr pr0 mt3 mt0-ns">
+                                    <div class="f6 button-reset bg-white dim pointer mh3-ns mh2 ph2-ns ph1 dib">
+                                        <p class="black-60 ma0 mt2 f6">Available</p>
+                                        <p class="tc f4 ma0 mt2">2</p>
+                                    </div>
+                                    <div class="f6 button-reset bg-white dim pointer mh3-ns mh2 ph2-ns ph1 dib">
+                                        <p class="black-60 ma0 mt2 f6">Pending</p>
+                                        <p class="tc f4 ma0 mt2">4</p>
+                                    </div>
+                                    <div class="f6 button-reset bg-white dim pointer mh3-ns mh2 ph2-ns ph1 dib">
+                                        <p class="black-60 ma0 mt2 f6">Unavailable</p>
+                                        <p class="tc f4 ma0 mt2">2</p>
+                                    </div>
+                                    <div class="f6 button-reset bg-white dim pointer mh3-ns mh2 ph2-ns ph1 dib">
+                                        <p class="black-60 ma0 mt2 f6">Applied</p>
+                                        <p class="tc f4 ma0 mt2">8</p>
+                                    </div>
+                                </form>
+                            </div>
+                            <div id="more" style="z-index: 22" class="absolute right-0 dn top-0">
+                                <ul class="list pl0 center bg-white w4 shadow-1">
+                                    <li class="lh-copy pv2 pl3 ba bl-0 bt-0 br-0 b--black-10">Edit brief</li>
+                                    <li class="lh-copy pv2 pl3 ba bl-0 bt-0 br-0 b--black-10">Clone brief</li>
+                                    <li class="lh-copy pv2 pl3 br-0 ">Close brief</li>
+                                </ul>
+                            </div>
+                        </article>
+                        <hr>
+                        <button class="fr bg-white fw6 black-40 pointer" style="margin-right: 25px; margin-bottom: 20px">View shortlist</button>
+                    </div>
+                    <div class='bg-white overflow-auto mt3'>
+                        <article class="dt-ns w-100 mt2 p20 bg-white relative pointer parent overflow-auto" href="#0">
+                            <div class="dtc-ns v-mid">
+                                <h3 class="lh-title black mv0">Front-end web developer with a extra long...</h3>
+                                <p class="mt2 mb1">Developer · £350/day · starting 13 Aug 2017</p>
+                            </div>
+                            <div class="dtc-ns v-mid fl fr-ns">
+                                <form class="w-100 tr pr0 mt3 mt0-ns">
+                                    <div class="f6 button-reset bg-white dim pointer mh3-ns mh2 ph2-ns ph1 dib">
+                                        <p class="black-60 ma0 mt2 f6">Available</p>
+                                        <p class="tc f4 ma0 mt2">2</p>
+                                    </div>
+                                    <div class="f6 button-reset bg-white dim pointer mh3-ns mh2 ph2-ns ph1 dib">
+                                        <p class="black-60 ma0 mt2 f6">Pending</p>
+                                        <p class="tc f4 ma0 mt2">4</p>
+                                    </div>
+                                    <div class="f6 button-reset bg-white dim pointer mh3-ns mh2 ph2-ns ph1 dib">
+                                        <p class="black-60 ma0 mt2 f6">Unavailable</p>
+                                        <p class="tc f4 ma0 mt2">2</p>
+                                    </div>
+                                    <div class="f6 button-reset bg-white dim pointer mh3-ns mh2 ph2-ns ph1 dib">
+                                        <p class="black-60 ma0 mt2 f6">Applied</p>
+                                        <p class="tc f4 ma0 mt2">8</p>
+                                    </div>
+                                </form>
+                            </div>
+                        </article>
+                        <hr>
+                        <button class="fr bg-white fw6 black-40 pointer" style="margin-right: 25px; margin-bottom: 20px">Resume search</button>
+                    </div>
                 </div>
             </div>
         </div>
