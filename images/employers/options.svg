@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="358px" height="17px" viewBox="0 0 358 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>options</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Mockup" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.600000024" font-weight="normal">
+        <g id="tasks--|-desktop" transform="translate(-624.000000, -94.000000)" fill="#2D2926">
+            <g id="options" transform="translate(624.000000, 88.000000)">
+                <g id="Group-8">
+                    <text id="" font-family="FontAwesome" font-size="16">
+                        <tspan x="0" y="20"></tspan>
+                    </text>
+                    <text id="Edit-brief" font-family="Brother-1816-Regular, Brother 1816" font-size="13" line-spacing="20">
+                        <tspan x="26" y="14">Edit brief</tspan>
+                    </text>
+                </g>
+                <g id="Group-7" transform="translate(134.000000, 0.000000)">
+                    <text id="" font-family="FontAwesome" font-size="16">
+                        <tspan x="0" y="20"></tspan>
+                    </text>
+                    <text id="Copy-brief" font-family="Brother-1816-Regular, Brother 1816" font-size="13" line-spacing="20">
+                        <tspan x="26" y="14">Copy brief</tspan>
+                    </text>
+                </g>
+                <g id="Group-6" transform="translate(268.000000, 0.000000)">
+                    <text id="" font-family="FontAwesome" font-size="16">
+                        <tspan x="0.214285714" y="20"></tspan>
+                    </text>
+                    <text id="Close-brief" font-family="Brother-1816-Regular, Brother 1816" font-size="13" line-spacing="20">
+                        <tspan x="24" y="14">Close brief</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
